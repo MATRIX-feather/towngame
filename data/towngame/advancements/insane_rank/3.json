@@ -1,0 +1,24 @@
+{
+    "display": {
+        "frame": "challenge",
+        "icon": {
+            "item": "iron_ingot"
+        },
+        "title": [
+            {
+                "text": "RANK III",
+                "color": "yellow",
+                "bold": true
+            }
+        ],
+        "description": [{
+            "text": "你成功的在insane模式中撑进了前三!"
+        }]
+    },
+    "parent": "towngame:insane_root",
+    "criteria": {
+        "rank": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,84 @@
+{
+    "pools": [
+        {
+            "rolls": 2,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:experience_bottle",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "max": 8,
+                                "min": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:iron_ingot",
+                    "weight": 20,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_count",
+                            "count": {
+                                "max": 20,
+                                "min": 1
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:empty",
+                    "weight": 70
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:horse_spawn_egg",
+                    "weight": 10,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "载具召唤"
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "可以召唤一匹马"
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:anvil",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                "传送器"
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                "传送你至最近的物资点"
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+execute if score nife_tg_1stevent nife_stats matches 300 if score nife_tg_borderchangetime nife_stats matches 300 if score nife_tg_resizetime nife_stats matches 300 if score nife_tg_insanemode nife_tg_settings matches 1 run function towngame:custom/insane/off
+execute if score nife_tg_1stevent nife_stats matches 300 if score nife_tg_borderchangetime nife_stats matches 300 if score nife_tg_resizetime nife_stats matches 300 if score nife_tg_insanemode nife_tg_settings matches 0 run function towngame:custom/insane/on
+execute if score nife_tg_insanemode nife_tg_settings matches 2 run scoreboard players set nife_tg_insanemode nife_tg_settings 0

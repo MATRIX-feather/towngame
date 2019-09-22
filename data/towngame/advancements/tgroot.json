@@ -1,0 +1,17 @@
+{
+    "display": {
+        "announce_to_chat": false,
+        "show_toast": false,
+        "background":"textures/block/diamond_block.png",
+        "icon": {
+            "item": "iron_sword"
+        },
+        "title": "NiFeather Towngame",
+        "description": "Let the show begin"
+    },
+    "criteria": {
+        "cmd": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

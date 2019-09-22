@@ -1,0 +1,4 @@
+scoreboard players remove nife_tglobby_countdown nife_time 1
+scoreboard players operation nife_tglobby_bossbarnum nife_time = nife_tglobby_countdown nife_time
+scoreboard players operation nife_tglobby_bossbarnum nife_time /= towngame_1s nife_time
+execute store result bossbar nife:tg_lobby_countdownbar value run scoreboard players get nife_tglobby_bossbarnum nife_time

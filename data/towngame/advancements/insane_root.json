@@ -1,0 +1,24 @@
+{
+    "display": {
+        "hidden": true,
+        "icon": {
+            "item": "diamond",
+            "nbt": "{Enchantments:[{id:\"minecraft:flame\"}]}"
+        },
+        "title": {
+            "text": "INSANE MODE",
+            "color": "dark_red",
+            "bold": true
+        },
+        "description": ""
+    },
+    "parent": "towngame:tgroot",
+    "criteria": {
+        "cmd": {
+            "trigger": "minecraft:impossible"
+        },
+        "rank": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

@@ -1,0 +1,123 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 15,
+                "max": 30
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.1,
+                "min": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 60,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 8
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[\
+                  {Id:4,Amplifier:254,Duration:200},\
+                  {Id:15,Amplifier:0,Duration:200},\
+                  {Id:18,Amplifier:0,Duration:400},\
+                  {Id:19,Amplifier:1,Duration:200},\
+                  {Id:24,Amplifier:0,Duration:1200}],\
+                  Potion:\"harming\",\
+                  CustomPotionColor:6684672,\
+                  display:{Name:'{\"text\":\"\u00a7c\u00a7lDOWN\u00a7r   迫真手雷\"}'}\
+                }"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:iron_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 1,
+                "max": 60
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.1,
+                "min": 0
+              }
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

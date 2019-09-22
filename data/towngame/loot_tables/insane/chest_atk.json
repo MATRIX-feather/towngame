@@ -1,0 +1,133 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:crossbow",
+          "weight": 50,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 90,
+                "max": 90
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Enchantments:[{lvl:5s,id:\"minecraft:quick_charge\"}]}"
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.20,
+                "min": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:arrow",
+          "weight": 60,
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 32
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{CustomPotionEffects:[\
+                  {Id:4,Amplifier:254,Duration:200},\
+                  {Id:15,Amplifier:0,Duration:200},\
+                  {Id:18,Amplifier:0,Duration:400},\
+                  {Id:19,Amplifier:1,Duration:200},\
+                  {Id:24,Amplifier:0,Duration:1200}],\
+                  CustomPotionColor:6684672,\
+                  Potion:\"harming\",\
+                  display:{Name:'{\"text\":\"\u00a7c\u00a7lDOWN\u00a7r   迫真手雷\"}'}\
+                }"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:suspicious_stew",
+          "weight": 1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag":"{display:{Name:\"{\\\"text\\\":\\\"\\\\u00a7r卡斯兰娜家族の迷之炖菜 \\\"}\"},\
+                Effects:[{EffectId:2,Amplifier:1,EffectDuration:1200},{EffectId:4,Amplifier:99,EffectDuration:1200},{EffectId:7,Amplifier:1,EffectDuration:20},{EffectId:11,Amplifier:1,EffectDuration:1200},{EffectId:15,Amplifier:0,EffectDuration:600},{EffectId:18,Amplifier:0,EffectDuration:3600},{EffectId:20,Amplifier:3,EffectDuration:900}]\
+                }"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                "\u00a7d采用上好的帝王级崩坏兽核心,配上高品质的炸绯玉丸",
+                "\u00a7d佐以休伯利安长期种植的高品质包菜,和天火圣\u00a7m(自)\u00a7d裁的精良火候",
+                "\u00a7d口感及其鲜美,根本停不下来",
+                "\u00a7b全负面效果,吃一口,让你爽上天awa"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_sword",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 1
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 60
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.3,
+                "min": 0
+              }
+            }
+          ],
+          "weight": 5
+        }
+      ]
+    }
+  ]
+}

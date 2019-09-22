@@ -1,0 +1,2 @@
+tellraw @s [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"规则:/function towngame:lobby/ui/rules"}]
+tellraw @s [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"注意事项:/function towngame:lobby/ui/attention"}]

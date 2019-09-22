@@ -1,0 +1,15 @@
+{
+    "display": {
+        "icon": {
+            "item": "iron_ingot"
+        },
+        "title": "Rank 3",
+        "description": "再加把劲!"
+    },
+    "parent": "towngame:tgroot",
+    "criteria": {
+        "rank":{
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

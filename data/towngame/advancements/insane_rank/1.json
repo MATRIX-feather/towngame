@@ -1,0 +1,25 @@
+{
+    "display": {
+        "frame": "challenge",
+        "icon": {
+            "item": "diamond"
+        },
+        "title": [
+            {
+                "text": "RANK I",
+                "color": "dark_red",
+                "bold": true
+            }
+        ],
+        "description": [{
+            "text": "OHHHHHHHHHH",
+            "color": "light_purple"
+        }]
+    },
+    "parent": "towngame:insane_root",
+    "criteria": {
+        "rank": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

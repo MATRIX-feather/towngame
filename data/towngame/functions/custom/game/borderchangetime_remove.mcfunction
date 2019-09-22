@@ -1,0 +1,4 @@
+execute if score nife_tg_lock nife_stats matches 0 run scoreboard players remove nife_tg_borderchangetime nife_tg_settings 600
+execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_borderchangetime nife_tg_settings matches ..0 run tellraw @p [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"red","bold":"true","text":"我不知道把缩圈时间设置为0是要干森么┑(￣Д ￣)┍"}]
+execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_borderchangetime nife_tg_settings matches ..0 run scoreboard players set nife_tg_borderchangetime nife_tg_settings 1200
+function towngame:custom/displayvalues

@@ -1,0 +1,16 @@
+{
+    "display": {
+        "frame": "goal",
+        "icon": {
+            "item": "gold_ingot"
+        },
+        "title": "Rank 2",
+        "description": "还不赖嘛"
+    },
+    "parent": "towngame:tgroot",
+    "criteria": {
+        "rank":{
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

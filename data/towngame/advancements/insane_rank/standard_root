@@ -1,0 +1,17 @@
+{
+    "display": {
+        "icon": {
+            "item": "diamond"
+        },
+        "title": {
+            "text":"标准模式"
+        },
+        "description":""
+    },
+    "parent": "towngame:tgroot",
+    "criteria": {
+        "cmd": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

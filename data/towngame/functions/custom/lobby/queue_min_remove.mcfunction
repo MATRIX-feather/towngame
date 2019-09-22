@@ -1,0 +1,3 @@
+execute if score nife_tg_lock nife_stats matches 0 if score nife_tglobby_queuestart nife_stats matches 1 run tellraw @p [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"red","bold":"true","text":"我不知道把队列最小人数设置为0是要干森么┑(￣Д ￣)┍"}]
+execute if score nife_tg_lock nife_stats matches 0 if score nife_tglobby_queuestart nife_stats matches 2.. run scoreboard players remove nife_tglobby_queuestart nife_stats 1
+function towngame:custom/displayvalues

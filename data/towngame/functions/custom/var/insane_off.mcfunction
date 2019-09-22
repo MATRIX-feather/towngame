@@ -1,0 +1,1 @@
+tellraw @a[distance=0..] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"gray","bold":"true","text":"insane模式已关闭,物资箱及补给内容已重置为正常模式"}]

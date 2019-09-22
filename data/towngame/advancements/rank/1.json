@@ -1,0 +1,16 @@
+{
+    "display": {
+        "frame": "challenge",
+        "icon": {
+            "item": "diamond"
+        },
+        "title": "Rank 1",
+        "description": "实力的证明"
+    },
+    "parent": "towngame:tgroot",
+    "criteria": {
+        "rank":{
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

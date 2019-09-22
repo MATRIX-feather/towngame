@@ -1,0 +1,24 @@
+{
+    "display": {
+        "frame": "challenge",
+        "icon": {
+            "item": "gold_ingot"
+        },
+        "title": [
+            {
+                "text": "RANK II",
+                "color": "gold",
+                "bold": true
+            }
+        ],
+        "description": [{
+            "text": "离第一名更近一步"
+        }]
+    },
+    "parent": "towngame:insane_root",
+    "criteria": {
+        "rank": {
+            "trigger": "minecraft:impossible"
+        }
+    }
+}

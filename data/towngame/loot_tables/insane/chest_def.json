@@ -1,0 +1,287 @@
+{
+  "pools": [
+    {
+      "rolls": 3,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:shield",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 90
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 1,
+                "min": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_chestplate",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:62,Damage:32767,AttributeModifiers:[{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0,Name:\"CBC\"}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "text": "穿在任何一个地方时",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+10 最大生命值",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+10 攻击速度",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+100 盔甲韧性",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+100 盔甲",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+10 击退抗性",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": 0
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:diamond_leggings",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 90
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "diamond_boots",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 90
+              }
+            },
+            {
+              "function": "set_damage",
+              "damage": {
+                "min": 0,
+                "max": 0.05
+              }
+            }
+          ]
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[\
+                                              {Id:6,Amplifier:2,Duration:20},\
+                                              {Id:10,Amplifier:3,Duration:200}\
+                                              ],\
+                                              display:{Name:'{\"text\":\"\u00a7a\u00a7lUP\u00a7r   迫真药包\"}'}\
+                                              }"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:diamond_helmet",
+          "weight": 20,
+          "functions": [
+            {
+              "function": "enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 30,
+                "max": 90
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{HideFlags:62,AttributeModifiers:[{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0,Name:\"CBC\"}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {
+                  "text": ""
+                },
+                {
+                  "text": "穿在任何一个地方时",
+                  "color": "gray",
+                  "italic": false
+                },
+                {
+                  "text": "+10 最大生命值",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+10 攻击速度",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+100 盔甲韧性",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+100 盔甲",
+                  "color": "blue",
+                  "italic": false
+                },
+                {
+                  "text": "+10 击退抗性",
+                  "color": "blue",
+                  "italic": false
+                }
+              ]
+            },
+            {
+              "function": "set_damage",
+              "damage": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 2,
+      "entries": [
+        {
+          "type": "item",
+          "name": "minecraft:splash_potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": 1
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[\
+                                              {Id:1,Amplifier:19,Duration:100},\
+                                              {Id:28,Amplifier:0,Duration:600},\
+                                              {Id:8,Amplifier:29,Duration:100},\
+                                              {Id:18,Amplifier:254,Duration:200},\
+                                              {Id:14,Amplifier:0,Duration:200},\
+                                              {Id:16,Amplifier:0,Duration:200}],\
+                      display:{Name:'{\"text\":\"\u00a7a\u00a7lUP\u00a7r  逃跑\"}'},\
+                      Potion:\"leaping\",\
+                      CustomPotionColor:16777214\
+                                              }"
+            }
+          ],
+          "weight": 1
+        },
+        {
+          "type": "item",
+          "name": "minecraft:potion",
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "min": 1,
+                "max": 2
+              }
+            },
+            {
+              "function": "set_nbt",
+              "tag": "{CustomPotionEffects:[\
+                                              {Duration:600,Id:1,Amplifier:5},\
+                                              {Duration:3000,Id:8,Amplifier:2},\
+                                              {Duration:600,Id:10,Amplifier:2},\
+                                              {Duration:20,Id:6,Amplifier:2},\
+                                              {Duration:600,Id:14,Amplifier:2}],\
+                                              display:{Name:'{\"text\":\"\u00a7a\u00a7lUP\u00a7r  迫真buff包\"}'},\
+                                              Potion:\"leaping\",\
+                                              CustomPotionColor:65280\
+                                              }"
+            }
+          ],
+          "weight": 5
+        },
+        {
+          "type": "item",
+          "name": "minecraft:ender_pearl",
+          "weight": 5,
+          "functions": [
+            {
+              "function": "set_count",
+              "count": {
+                "max": 8,
+                "min": 0
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

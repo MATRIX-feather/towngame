@@ -1,0 +1,8 @@
+#负责计算一些值的显示数字
+scoreboard players operation nife_tg_1stevent_display nife_stats = nife_tg_1steventtime nife_tg_settings
+scoreboard players operation nife_tg_borderchangetime_display nife_stats = nife_tg_borderchangetime nife_tg_settings
+scoreboard players operation nife_tg_resizetime_display nife_stats = nife_tg_resizetime nife_tg_settings
+
+scoreboard players operation nife_tg_1stevent_display nife_stats /= towngame_1s nife_time
+scoreboard players operation nife_tg_borderchangetime_display nife_stats /= towngame_1s nife_time
+scoreboard players operation nife_tg_resizetime_display nife_stats /= towngame_1s nife_time

@@ -1,0 +1,2 @@
+advancement grant @a[distance=0..] only towngame:insane_root
+tellraw @a[distance=0..] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"red","bold":"true","text":"insane模式已开启,物资箱及补给内容已更改"}]
