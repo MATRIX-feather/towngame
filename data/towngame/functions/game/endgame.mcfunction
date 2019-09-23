@@ -6,7 +6,7 @@ playsound minecraft:entity.ender_dragon.death ambient @a[tag=nife_game_1] ~ ~ ~ 
 scoreboard players set nife_tg_title nife_stats 2
 scoreboard players set nife_tg_title nife_time 0
 #设置旁观者
-execute at @a[tag=nife_game_1] run gamemode adventure @a[distance=0..,tag=!nife_game_1]
+execute at @a[tag=nife_game_1] run gamemode adventure @a[distance=0..]
 #设置边界
 execute at @e[tag=spread] run worldborder set 1300 10
 execute at @e[tag=spread] run worldborder center ~ ~
@@ -35,13 +35,13 @@ effect give @a[tag=nife_game_1] minecraft:saturation 10 1
 xp set @a[tag=nife_game_1] 0 levels
 execute at @e[tag=nife_tg_lobby] run tp @a[distance=0..] ~ ~ ~10
 #发放奖励
-loot give @a[tag=nife_game_1,gamemode=adventure] loot towngame:rank/1
+#loot give @a[tag=nife_game_1,gamemode=adventure] loot towngame:rank/1
 advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled] only towngame:rank/1 rank
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled] only towngame:insane_rank/1
-loot give @a[tag=nife_game_1,tag=town_rank2] loot towngame:rank/2
+#loot give @a[tag=nife_game_1,tag=town_rank2] loot towngame:rank/2
 advancement grant @a[tag=nife_game_1,tag=town_rank2,tag=nife_tgadv_enabled] only towngame:rank/2 rank
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled,tag=town_rank2] only towngame:insane_rank/2
-loot give @a[tag=nife_game_1,tag=town_rank3] loot towngame:rank/3
+#loot give @a[tag=nife_game_1,tag=town_rank3] loot towngame:rank/3
 advancement grant @a[tag=nife_game_1,tag=town_rank3,tag=nife_tgadv_enabled] only towngame:rank/3 rank
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled,tag=town_rank3] only towngame:insane_rank/3
 gamemode adventure @a[tag=nife_game_1]

@@ -19,5 +19,5 @@ execute if score nife_tg_title nife_time matches 80 run title @a[tag=nife_game_1
 execute if score nife_tg_title nife_time matches 90 run title @a[tag=nife_game_1] title {"text":"\u00a7c\u00a7lTownGame"}
 execute if score nife_tg_title nife_time matches 100 run title @a[tag=nife_game_1] title {"text":"\u00a7c\u00a7lTownGame\u00a7f_"}
 execute if score nife_tg_title nife_time matches 110 run title @a[tag=nife_game_1] title {"text":"\u00a7c\u00a7lTownGame"}
-execute if score nife_tg_title nife_time matches 130 run title @a[tag=nife_game_1] subtitle [{"text":"\u00a7c\u00a7l游戏将在 "},{"color":"gold","bold":"true","score":{"objective":"nife_stats","name":"nife_tg_1stevent_display"}},{"text":" 内开始缩圈","color":"red","bold":true}]
+execute if score nife_tg_title nife_time matches 130 run title @a[tag=nife_game_1] subtitle [{"text":"\u00a7c\u00a7l游戏将在 "},{"color":"gold","bold":"true","score":{"objective":"nife_stats","name":"nife_tg_1stevent_display"}},{"text":" 秒内开始缩圈","color":"red","bold":true}]
 execute if score nife_tg_title nife_time matches 130 run scoreboard players set nife_tg_title nife_stats 0

@@ -1,6 +1,5 @@
 {
     "values":[
-        "towngame:tick",
-        "towngame:lobby/main"
+        "towngame:tick"
     ]
 }
