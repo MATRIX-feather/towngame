@@ -67,8 +67,7 @@
                   {Id:4,Amplifier:254,Duration:200},\
                   {Id:15,Amplifier:0,Duration:200},\
                   {Id:18,Amplifier:0,Duration:400},\
-                  {Id:19,Amplifier:1,Duration:200},\
-                  {Id:24,Amplifier:0,Duration:1200}],\
+                  {Id:19,Amplifier:1,Duration:200}],\
                   CustomPotionColor:6684672,\
                   Potion:\"harming\",\
                   display:{Name:'{\"text\":\"\u00a7c\u00a7lDOWN\u00a7r   迫真手雷\"}'}\

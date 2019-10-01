@@ -14,7 +14,7 @@ bossbar add nife:tg_lobby_countdownbar {"text":"剩余时间"}
 bossbar set nife:tg_lobby_countdownbar max 30
 bossbar set nife:tg_lobby_countdownbar value 0
 bossbar set nife:tg_lobby_countdownbar color white
-bossbar set nife:tg_lobby_countdownbar players @a[tag=nife_game_1]
+bossbar set nife:tg_lobby_countdownbar players @a[tag=nife_tg_queue]
 tag @a remove nife_tg_queue
 tag @a remove nife_tg_queue_exit
 #函数插件调起

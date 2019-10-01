@@ -18,3 +18,4 @@ execute if score nife_tg_title nife_stats matches 1 run execute at @e[tag=nife_t
 execute if score nife_tg_title nife_stats matches 2 run execute at @e[tag=nife_tg_lobby] run function towngame:game/ui/end
 scoreboard players enable @a nife_tg_about
 execute as @a[scores={nife_tg_about=1}] run function towngame:about
+execute if score game1 nife_stats matches 0 run function towngame:lobby/main
