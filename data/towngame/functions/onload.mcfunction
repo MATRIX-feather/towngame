@@ -20,7 +20,5 @@ tag @a remove nife_tg_queue_exit
 #函数插件调起
 function #towngame:plugin.onload
 #UI
-tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"NiFeather Towngame已被加载"}]
-function towngame:about
-#tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"gold","bold":"true","text":"版本 : generic,release @ 11.0.0-20190915"}]
-#tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"gold","bold":"true","text":"作者 : NiFeather"}]
+execute if score has_pm nife_stats matches 0 run tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"NiFeather Towngame已被加载"}]
+#function towngame:about

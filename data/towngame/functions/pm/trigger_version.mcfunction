@@ -1,0 +1,1 @@
+tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"gold","bold":"true","text":"版本 : generic,master @ 11.2.1-20191005"}]

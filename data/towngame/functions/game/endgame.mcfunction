@@ -1,3 +1,5 @@
+#添加tag
+tag @a[tag=nife_game_1,gamemode=adventure] add town_rank1
 #结束计时
 scoreboard players set game1 nife_stats 0
 #播放声音
@@ -23,11 +25,11 @@ execute at @e[tag=nife_tg_lobby] run kill @e[type=arrow,distance=0..]
 execute at @e[tag=nife_tg_lobby] run kill @e[type=item,distance=0..]
 #排名公告
 tellraw @a[tag=nife_game_1] [{"text":"+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+","color":"blue","bold":true,"strikethrough":true}]
-tellraw @a[tag=nife_game_1] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"text":"第一名:","color":"gold","bold":true},{"color":"gold","bold":true,"selector":"@a[gamemode=adventure,tag=nife_game_1]"}]
+tellraw @a[tag=nife_game_1] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"text":"第一名:","color":"gold","bold":true},{"color":"gold","bold":true,"selector":"@a[tag=nife_game_1,tag=town_rank1]"}]
 tellraw @a[tag=nife_game_1] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"text":"第二名:","color":"blue","bold":true},{"color":"blue","bold":true,"selector":"@a[tag=nife_game_1,tag=town_rank2]"}]
 tellraw @a[tag=nife_game_1] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"text":"第三名:","color":"green","bold":true},{"color":"green","bold":true,"selector":"@a[tag=nife_game_1,tag=town_rank3]"}]
 tellraw @a[tag=nife_game_1] [{"text":"+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+","color":"blue","bold":true,"strikethrough":true}]
-tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"游戏已结束,第一名为 "},{"selector":"@a[gamemode=adventure,tag=nife_game_1]"},{"text":" !"}]
+tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"游戏已结束,第一名为 "},{"selector":"@a[tag=nife_game_1,tag=town_rank1]"},{"text":" !"}]
 #重置玩家数据
 clear @a[tag=nife_game_1]
 effect clear @a[tag=nife_game_1]
@@ -35,13 +37,10 @@ effect give @a[tag=nife_game_1] minecraft:saturation 10 1
 xp set @a[tag=nife_game_1] 0 levels
 execute at @e[tag=nife_tg_lobby] run tp @a[distance=0..] ~ ~ ~10
 #发放奖励
-#loot give @a[tag=nife_game_1,gamemode=adventure] loot towngame:rank/1
-advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled] only towngame:rank/1 rank
+advancement grant @a[tag=nife_game_1,tag=town_rank1,tag=nife_tgadv_enabled] only towngame:rank/1 rank
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled] only towngame:insane_rank/1
-#loot give @a[tag=nife_game_1,tag=town_rank2] loot towngame:rank/2
 advancement grant @a[tag=nife_game_1,tag=town_rank2,tag=nife_tgadv_enabled] only towngame:rank/2 rank
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled,tag=town_rank2] only towngame:insane_rank/2
-#loot give @a[tag=nife_game_1,tag=town_rank3] loot towngame:rank/3
 advancement grant @a[tag=nife_game_1,tag=town_rank3,tag=nife_tgadv_enabled] only towngame:rank/3 rank
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement grant @a[tag=nife_game_1,gamemode=adventure,tag=nife_tgadv_enabled,tag=town_rank3] only towngame:insane_rank/3
 gamemode adventure @a[tag=nife_game_1]
@@ -49,6 +48,7 @@ gamemode adventure @a[tag=nife_game_1]
 function #towngame:plugin.endgame
 #去除tag
 tag @a remove nife_game_1
+tag @a remove town_rank1
 tag @a remove town_rank2
 tag @a remove town_rank3
 tag @a remove nife_tgadv_enabled
