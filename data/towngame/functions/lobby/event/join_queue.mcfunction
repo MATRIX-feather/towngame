@@ -11,11 +11,11 @@ tellraw @a[distance=..0.5,tag=nife_tg_queue_exit] [{"color":"dark_aqua","bold":"
 tag @a[distance=..0.5,tag=nife_tg_queue_exit] remove nife_tg_queue_exit
 #更改标题时间
 title @a[distance=..0.5,tag=nife_tg_queue] times 0 40 5
-#将人tp回去
-tp @p ~ ~ ~10
 #刷新bossbar
 bossbar set nife:tg_lobby_countdownbar players @a[tag=nife_tg_queue]
 #锁定自定义值
 scoreboard players set nife_tg_lock nife_stats 1
 #函数插件调起
 function #towngame:plugin.event.player_join_queue
+#将人tp回去
+tp @p ~ ~ ~10

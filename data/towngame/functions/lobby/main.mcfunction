@@ -14,8 +14,8 @@ execute at @a[tag=nife_tg_queue] run particle minecraft:crit ~ ~2 ~ 0 0 0 0 1 no
 execute at @a[tag=nife_tg_queue] run scoreboard players add player_count nife_stats 1
 #nife_tglobby_countdown:检测到人数之后的倒计时
 #nife_tglobby_queuestart:开始,0:未开始,1:开始
-execute if score player_count nife_stats >= nife_tglobby_queuestart nife_stats if score nife_tglobby_countdown nife_stats matches 0 at @e[tag=nife_tg_lobby] run function towngame:lobby/queue_countdown
-execute if score player_count nife_stats < nife_tglobby_queuestart nife_stats at @e[tag=nife_tg_lobby] run function towngame:lobby/stop
+execute if score player_count nife_stats >= nife_tglobby_queuestart nife_stats if score nife_tglobby_countdown nife_stats matches 0 at @e[tag=nife_tg_lobby,limit=1] run function towngame:lobby/queue_countdown
+execute if score player_count nife_stats < nife_tglobby_queuestart nife_stats at @e[tag=nife_tg_lobby,limit=1] run function towngame:lobby/stop
 #大厅倒计时
 execute if score nife_tglobby_title nife_stats matches 1 run scoreboard players add nife_tglobby_title nife_time 1
 #倒计时时间

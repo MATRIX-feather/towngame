@@ -52,6 +52,8 @@ tag @a remove town_rank1
 tag @a remove town_rank2
 tag @a remove town_rank3
 tag @a remove nife_tgadv_enabled
+
+
 #善后工作
 #  修复bossbar显示错误
 bossbar set nife:game_1 players @a[tag=nife_game_1]
