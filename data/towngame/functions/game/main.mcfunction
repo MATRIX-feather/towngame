@@ -12,7 +12,8 @@ kill @e[type=arrow,nbt={inGround:1b}]
 clear @a[tag=nife_game_1] minecraft:chest
 clear @a[tag=nife_game_1] minecraft:glass_bottle
 #子任务 道具检测
-function towngame:game/var/main
+function towngame:game/var/main.legacy
+execute as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/var/main
 function nifeather_updater:update/main
 #tick_Current自减
 scoreboard players operation towngame_bossbar_num nife_time = tick_Current nife_time

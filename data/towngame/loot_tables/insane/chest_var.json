@@ -3,6 +3,20 @@
     {
         "rolls": 2,
         "entries": [
+          {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_mutton",
+              "weight": 20,
+              "functions":[
+                  {
+                      "function": "minecraft:set_count",
+                      "count":{
+                          "max": 8,
+                          "min": 0
+                      }
+                  }
+              ]
+          },
             {
                 "type": "minecraft:item",
                 "name": "minecraft:experience_bottle",
@@ -38,7 +52,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:spectral_arrow",
+          "name": "minecraft:carrot_on_a_stick",
           "weight": 10,
           "functions": [
             {
@@ -57,14 +71,20 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "可以使其他玩家发光"
+                "可以使其他玩家发光",
+                [{"keybind": "key.use"},"使用"]
+                
               ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[player_glow],CustomModelData:1}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:horse_spawn_egg",
+          "name": "minecraft:carrot_on_a_stick",
           "weight": 10,
           "functions": [
             {
@@ -76,21 +96,26 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "可以召唤一匹马"
+                "可以召唤一匹马",
+                [{"keybind": "key.use"},"使用"]
               ]
             },
             {
               "function": "minecraft:set_count",
               "count": {
-                "max": 2,
+                "max": 1,
                 "min": 1
               }
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[summon_horse],CustomModelData:2}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:anvil",
+          "name": "minecraft:carrot_on_a_stick",
           "weight": 1,
           "functions": [
             {
@@ -102,18 +127,23 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "传送你至最近的物资点"
+                "传送你至最近的物资点",
+                [{"keybind": "key.use"},"使用"]
               ]
             },
             {
               "function": "minecraft:set_count",
               "count": 1
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[teleporter],CustomModelData:3}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:tnt",
+          "name": "minecraft:carrot_on_a_stick",
           "weight": 10,
           "functions": [
             {
@@ -125,7 +155,8 @@
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "BOOM"
+                "BOOM",
+                [{"keybind": "key.use"},"使用"]
               ]
             },
             {
@@ -134,6 +165,10 @@
                 "max": 2,
                 "min": 1
               }
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[tnt],CustomModelData:4}"
             }
           ]
         }

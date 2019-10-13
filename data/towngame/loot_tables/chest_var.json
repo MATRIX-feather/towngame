@@ -5,6 +5,20 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:apple",
+                    "weight": 20,
+                    "functions":[
+                        {
+                            "function": "minecraft:set_count",
+                            "count":{
+                                "max": 8,
+                                "min": 0
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:experience_bottle",
                     "weight": 20,
                     "functions": [
@@ -41,43 +55,64 @@
                     "weight": 70
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:horse_spawn_egg",
-                    "weight": 10,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                "载具召唤"
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                "可以召唤一匹马"
-                            ]
-                        }
-                    ]
+                  "type": "minecraft:item",
+                  "name": "minecraft:carrot_on_a_stick",
+                  "weight": 10,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_name",
+                      "name": [
+                        "载具召唤"
+                      ]
+                    },
+                    {
+                      "function": "minecraft:set_lore",
+                      "lore": [
+                        "可以召唤一匹马",
+                        [{"keybind": "key.use"},"使用"]
+                      ]
+                    },
+                    {
+                      "function": "minecraft:set_count",
+                      "count": {
+                        "max": 1,
+                        "min": 1
+                      }
+                    },
+                    {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{tg_tags:[summon_horse],CustomModelData:2}"
+                    }
+                  ]
                 },
                 {
-                    "type": "minecraft:item",
-                    "name": "minecraft:anvil",
-                    "weight": 1,
-                    "functions": [
-                        {
-                            "function": "minecraft:set_name",
-                            "name": [
-                                "传送器"
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                "传送你至最近的物资点"
-                            ]
-                        }
-                    ]
-                }
+                  "type": "minecraft:item",
+                  "name": "minecraft:carrot_on_a_stick",
+                  "weight": 1,
+                  "functions": [
+                    {
+                      "function": "minecraft:set_name",
+                      "name": [
+                        "传送器"
+                      ]
+                    },
+                    {
+                      "function": "minecraft:set_lore",
+                      "lore": [
+                        "传送你至最近的物资点",
+                        [{"keybind": "key.use"},"使用"]
+                      ]
+                    },
+                    {
+                      "function": "minecraft:set_count",
+                      "count": 1
+                    },
+                    {
+                        "function": "minecraft:set_nbt",
+                        "tag": "{tg_tags:[teleporter],CustomModelData:3}"
+                    }
+                  ]
+                },
             ]
         }
     ]
