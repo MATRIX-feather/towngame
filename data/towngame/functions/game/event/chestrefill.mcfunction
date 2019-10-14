@@ -7,4 +7,4 @@ execute at @e[type=minecraft:armor_stand,tag=game1_def] run data merge block ~ ~
 execute at @e[type=minecraft:armor_stand,tag=game1_atk] run loot insert ~ ~ ~ loot towngame:chest_var
 kill @e[type=item]
 xp add @a[tag=nife_game_1] 10 levels
-tellraw @a[tag=nife_game_1] {"text":"\u00a7c所有已被加载的物资箱已重新填充"}
+tellraw @a[tag=nife_game_1] {"translate":"tg.event.borderchange","color":"red"}

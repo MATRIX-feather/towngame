@@ -141,8 +141,15 @@
                                               {Id:6,Amplifier:2,Duration:20},\
                                               {Id:10,Amplifier:3,Duration:200}\
                                               ],\
-                                              display:{Name:'{\"text\":\"\u00a7a\u00a7lUP\u00a7r   迫真药包\"}'}\
                                               }"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name":[
+                {"translate": "tg.up","color":"green","bold":true},
+                {"text":"     "},
+                {"translate": "tg.def.up1.name","color":"white","bold": false}
+              ]
             }
           ],
           "weight": 5
@@ -232,10 +239,17 @@
                                               {Id:18,Amplifier:254,Duration:200},\
                                               {Id:14,Amplifier:0,Duration:200},\
                                               {Id:16,Amplifier:0,Duration:200}],\
-                      display:{Name:'{\"text\":\"\u00a7a\u00a7lUP\u00a7r  逃跑\"}'},\
                       Potion:\"leaping\",\
                       CustomPotionColor:16777214\
                                               }"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name":[
+                {"translate": "tg.up","color":"green","bold":true},
+                {"text":"     "},
+                {"translate": "tg.def.up2.name","color":"white","bold": false}
+              ]
             }
           ],
           "weight": 1
@@ -259,10 +273,17 @@
                                               {Duration:600,Id:10,Amplifier:2},\
                                               {Duration:20,Id:6,Amplifier:2},\
                                               {Duration:600,Id:14,Amplifier:2}],\
-                                              display:{Name:'{\"text\":\"\u00a7a\u00a7lUP\u00a7r  迫真buff包\"}'},\
                                               Potion:\"leaping\",\
                                               CustomPotionColor:65280\
                                               }"
+            },
+            {
+              "function": "minecraft:set_name",
+              "name":[
+                {"translate": "tg.up","color":"green","bold":true},
+                {"text":"     "},
+                {"translate": "tg.def.up3.name","color":"white","bold": false}
+              ]
             }
           ],
           "weight": 5

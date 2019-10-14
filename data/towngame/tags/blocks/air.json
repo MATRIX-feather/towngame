@@ -1,0 +1,16 @@
+{
+    "values": [
+        "minecraft:air",
+        "minecraft:snow",
+        "minecraft:grass",
+        "minecraft:tall_grass",
+        "minecraft:sunflower",
+        "minecraft:lilac",
+        "minecraft:rose_bush",
+        "minecraft:peony",
+        "minecraft:large_fern",
+        "#minecraft:saplings",
+        "#minecraft:small_flowers"
+
+    ]
+}

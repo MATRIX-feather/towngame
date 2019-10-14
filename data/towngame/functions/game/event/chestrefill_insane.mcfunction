@@ -5,4 +5,4 @@ execute at @e[type=minecraft:armor_stand,tag=game1_anv] run setblock ~ ~ ~ minec
 execute at @e[type=minecraft:armor_stand,tag=game1_atk] run data merge block ~ ~ ~ {LootTable:"towngame:insane/chest_atk"}
 execute at @e[type=minecraft:armor_stand,tag=game1_def] run data merge block ~ ~ ~ {LootTable:"towngame:insane/chest_def"}
 execute at @e[type=minecraft:armor_stand,tag=game1_atk] run loot insert ~ ~ ~ loot towngame:insane/chest_var
-tellraw @a[tag=nife_game_1] {"text":"\u00a7c所有已被加载的物资箱已重新填充"}
+tellraw @a[tag=nife_game_1] {"translate":"tg.event.borderchange","color":"red"}

@@ -56,23 +56,16 @@
           "weight": 10,
           "functions": [
             {
-              "function": "minecraft:set_count",
-              "count": {
-                "max": 2,
-                "min": 1
-              }
-            },
-            {
               "function": "minecraft:set_name",
               "name": [
-                "透视者"
+                {"translate": "tg.var.glow.name"}
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "可以使其他玩家发光",
-                [{"keybind": "key.use"},"使用"]
+                {"translate": "tg.var.glow.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
                 
               ]
             },
@@ -90,22 +83,15 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                "载具召唤"
+                {"translate": "tg.var.summon_horse.name"}
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "可以召唤一匹马",
-                [{"keybind": "key.use"},"使用"]
+                {"translate": "tg.var.summon_horse.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
               ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "max": 1,
-                "min": 1
-              }
             },
             {
                 "function": "minecraft:set_nbt",
@@ -121,19 +107,15 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                "传送器"
+                {"translate": "tg.var.teleporter.name"}
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "传送你至最近的物资点",
-                [{"keybind": "key.use"},"使用"]
+                {"translate": "tg.var.teleporter.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
               ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": 1
             },
             {
                 "function": "minecraft:set_nbt",
@@ -149,26 +131,43 @@
             {
               "function": "minecraft:set_name",
               "name": [
-                "TNT"
+                {"translate": "tg.var.tnt.name"}
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
-                "BOOM",
-                [{"keybind": "key.use"},"使用"]
+                {"translate": "tg.var.tnt.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
               ]
-            },
-            {
-              "function": "minecraft:set_count",
-              "count": {
-                "max": 2,
-                "min": 1
-              }
             },
             {
                 "function": "minecraft:set_nbt",
                 "tag": "{tg_tags:[tnt],CustomModelData:4}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"translate": "tg.var.lazer.name"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate":"tg.var.lazer.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[lazer],CustomModelData:5}"
             }
           ]
         }

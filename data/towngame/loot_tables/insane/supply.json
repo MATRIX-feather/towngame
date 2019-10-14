@@ -5,7 +5,13 @@
             "entries": [
                 {
                     "type": "minecraft:loot_table",
+                    "weight": 70,
                     "name": "towngame:insane/chest_atk"
+                },
+                {
+                    "type": "minecraft:loot_table",
+                    "weight": 30,
+                    "name":"towngame:insane/chest_var"
                 }
             ]
         },
