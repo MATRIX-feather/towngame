@@ -8,6 +8,7 @@ scoreboard objectives add nife_pos_Y dummy {"text":"nife_pos_Y | 坐标Y"}
 scoreboard objectives add nife_pos_Z dummy {"text":"nife_pos_Z | 坐标Z"}
 scoreboard objectives add nife_tg_about trigger {"text":"nife_tg_trigger | 玩家触发"}
 scoreboard objectives add nife_P-health health {"text":"nife_P-health | 玩家生命值,只读"}
+scoreboard objectives add nife_P-calc health {"text":"nife_P-calc | ?"}
 scoreboard objectives add nife_var_use minecraft.used:minecraft.carrot_on_a_stick {"text":"nife_var_use | 道具使用,萝卜钓竿"}
 scoreboard players set nife_tglobby_countdown nife_stats 0
 #初始化bossbar

@@ -32,6 +32,7 @@ spreadplayers ~ ~ 450 451 false @a[tag=nife_game_1]
 execute at @a[tag=nife_game_1] run tp @p ~ 255 ~
 #初始化玩家数据
 effect give @a[tag=nife_game_1] minecraft:health_boost 1000000 30 true
+effect give @a[tag=nife_game_1] minecraft:blindness 3 1 true
 execute at @e[tag=nife_tg_lobby] run spawnpoint @a[tag=nife_game_1] ~ ~ ~10
 xp set @a[tag=nife_game_1] 60 levels
 execute if score nife_tg_insanemode nife_tg_settings matches 1 run xp set @a[tag=nife_game_1] 32767 levels
