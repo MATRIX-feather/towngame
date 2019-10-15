@@ -4,8 +4,12 @@
         "icon": {
             "item": "diamond"
         },
-        "title": "Rank 1",
-        "description": "实力的证明"
+        "title": [
+            {"translate": "tg.advancement.rank1.name"}
+        ],
+        "description": [
+            {"translate": "tg.advancement.rank1.desc"}
+        ]
     },
     "parent": "towngame:tgroot",
     "criteria": {

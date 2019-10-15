@@ -5,12 +5,12 @@ function towngame:platform_detect
 advancement grant @a[tag=nife_tg_queue] only towngame:tgroot cmd
 execute at @a[tag=nife_tg_queue] run scoreboard players add plyer_count nife_stats 1
 execute if score player_count nife_stats matches 3.. run tag @a[tag=nife_tg_queue] add nife_tgadv_enabled
-execute if score player_count nife_stats matches ..2 run tellraw @a[tag=nife_tg_queue] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"red","bold":"true","translate":"tg.init.warn.noadv"}]
+execute if score player_count nife_stats matches ..2 run tellraw @a[tag=nife_tg_queue] [{"color":"dark_aqua","bold":"true","translate":"tg.name"},{"color":"gray","bold":"true","translate":"tg.msg.head"},{"color":"red","bold":"true","translate":"tg.init.warn.noadv"}]
 execute at @e[tag=nife_tg_lobby] run gamemode spectator @a[distance=0..,tag=!nife_tg_queue]
 #锁定自定义值
 scoreboard players set nife_tg_lock nife_stats 1
 #如果只有一个人,则显示警告
-execute if score player_count nife_stats matches 1 run tellraw @a[tag=nife_tg_queue] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"red","translate":"tg.init.warn.singleplayer"}]
+execute if score player_count nife_stats matches 1 run tellraw @a[tag=nife_tg_queue] [{"color":"dark_aqua","bold":"true","translate":"tg.name"},{"color":"gray","bold":"true","translate":"tg.msg.head"},{"color":"red","translate":"tg.init.warn.singleplayer"}]
 ##重置被大厅进程引用的各种玩意
 ##加tag
 tag @a[distance=0..,tag=nife_tg_queue] add nife_game_1

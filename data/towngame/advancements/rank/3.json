@@ -3,8 +3,12 @@
         "icon": {
             "item": "iron_ingot"
         },
-        "title": "Rank 3",
-        "description": "再加把劲!"
+        "title": [
+            {"translate": "tg.advancement.rank3.name"}
+        ],
+        "description": [
+            {"translate": "tg.advancement.rank3.desc"}
+        ]
     },
     "parent": "towngame:tgroot",
     "criteria": {

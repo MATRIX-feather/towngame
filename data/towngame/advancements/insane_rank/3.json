@@ -6,13 +6,13 @@
         },
         "title": [
             {
-                "text": "RANK III",
+                "translate": "tg.advancement.insane.rank3.name",
                 "color": "yellow",
                 "bold": true
             }
         ],
         "description": [{
-            "text": "你成功的在insane模式中撑进了前三!"
+            "translate": "tg.advancement.insane.rank3.desc"
         }]
     },
     "parent": "towngame:insane_root",

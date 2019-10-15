@@ -4,8 +4,12 @@
         "icon": {
             "item": "gold_ingot"
         },
-        "title": "Rank 2",
-        "description": "还不赖嘛"
+        "title": [
+            {"translate": "tg.advancement.rank2.name"}
+        ],
+        "description": [
+            {"translate": "tg.advancement.rank2.desc"}
+        ]
     },
     "parent": "towngame:tgroot",
     "criteria": {

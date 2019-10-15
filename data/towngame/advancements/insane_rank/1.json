@@ -6,13 +6,13 @@
         },
         "title": [
             {
-                "text": "RANK I",
+                "translate": "tg.advancement.insane.rank1.name",
                 "color": "dark_red",
                 "bold": true
             }
         ],
         "description": [{
-            "text": "OHHHHHHHHHH",
+            "translate": "tg.advancement.insane.rank1.desc",
             "color": "light_purple"
         }]
     },

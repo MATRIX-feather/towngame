@@ -1,1 +1,1 @@
-tellraw @a[distance=0..] [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"gray","bold":"true","text":"insane模式已关闭,物资箱及补给内容已重置为正常模式"}]
+tellraw @a[distance=0..] [{"color":"gray","bold":true,"translate":"tg.custom.insane_off","with":[{"color":"dark_aqua","bold":"true","translate":"tg.name"},{"color":"gray","bold":"true","translate":"tg.msg.head"}]}]

@@ -62,12 +62,14 @@
                     {
                       "function": "minecraft:set_name",
                       "name": [
+                        {"text":"\u00a7r"},
                         {"translate": "tg.var.summon_horse.name"}
                       ]
                     },
                     {
                       "function": "minecraft:set_lore",
                       "lore": [
+                        {"text":"\u00a7r"},
                         {"translate": "tg.var.summon_horse.lore"},
                         [{"keybind": "key.use"},{"translate":"tg.use"}]
                       ]
@@ -86,12 +88,14 @@
                     {
                       "function": "minecraft:set_name",
                       "name": [
+                        {"text":"\u00a7r"},
                         {"translate": "tg.var.teleporter.name"}
                       ]
                     },
                     {
                       "function": "minecraft:set_lore",
                       "lore": [
+                        {"text":"\u00a7r"},
                         {"translate": "tg.var.teleporter.lore"},
                         [{"keybind": "key.use"},{"translate":"tg.use"}]
                       ]

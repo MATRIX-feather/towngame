@@ -6,13 +6,13 @@
         },
         "title": [
             {
-                "text": "RANK II",
+                "translate": "tg.advancement.insane.rank2.name",
                 "color": "gold",
                 "bold": true
             }
         ],
         "description": [{
-            "text": "离第一名更近一步"
+            "translate": "tg.advancement.insane.rank2.desc"
         }]
     },
     "parent": "towngame:insane_root",

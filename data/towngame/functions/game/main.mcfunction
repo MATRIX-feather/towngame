@@ -18,7 +18,7 @@ function nifeather_updater:update/main
 #tick_Current自减
 scoreboard players operation towngame_bossbar_num nife_time = tick_Current nife_time
 scoreboard players operation towngame_bossbar_num nife_time /= towngame_1s nife_time
-bossbar set nife:game_1 name [{"color":"white","bold":true,"translate":"tg.main.bbtext.1"},{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"text":" | "},{"translate":"tg.main.bbtext.2"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"translate":"tg.main.bbtext.3"},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"translate":"tg.main.bbtext.4"},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]
+bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
 execute at @a[tag=nife_game_1,limit=1] store result bossbar nife:game_1 value run worldborder get
 execute at @a[tag=nife_game_1,limit=1] store result score border_size nife_stats run worldborder get
 execute if score border_size nife_stats matches 1000.. run bossbar set nife:game_1 color green

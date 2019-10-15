@@ -24,5 +24,5 @@ tag @a remove nife_tg_queue_exit
 function #towngame:plugin.onload
 #UI
 #execute if score has_pm nife_stats matches 0 run 
-tellraw @a [{"color":"dark_aqua","bold":"true","text":"Towngame"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"NiFeather Towngame已被加载"}]
+tellraw @a [{"color":"dark_aqua","bold":"true","translate":"tg.name"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"NiFeather Towngame已被加载"}]
 function towngame:about
