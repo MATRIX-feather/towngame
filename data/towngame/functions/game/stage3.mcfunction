@@ -9,5 +9,5 @@ title @a[tag=nife_game_1] title [{"text":"⚠","color":"red","bold":true},{"tran
 title @a[tag=nife_game_1] subtitle [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stagechange.subt"},{"text":"⚠","color":"red","bold":true}]
 #音效及空投
 execute at @a[tag=nife_game_1] run playsound minecraft:entity.ender_dragon.growl ambient @a[tag=nife_game_1] ~ ~ ~ 10 1
-tellraw @a[tag=nife_game_1] {"translate":"tg.stage3.notice","color":"red","bold":true}
+tellraw @a[tag=nife_game_1] {"translate":"tg.stage3.supply.notice","color":"red","bold":true}
 kill @e[type=item]
