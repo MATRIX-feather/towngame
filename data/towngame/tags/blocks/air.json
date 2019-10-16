@@ -9,10 +9,15 @@
         "minecraft:rose_bush",
         "minecraft:peony",
         "minecraft:large_fern",
+        "minecraft:fern",
         "minecraft:sugar_cane",
         "minecraft:sweet_berry_bush",
+        "minecraft:water",
+        "minecraft:brown_mushroom",
+        "minecraft:red_mushroom",
         "#minecraft:saplings",
-        "#minecraft:small_flowers"
+        "#minecraft:small_flowers",
+        "#minecraft:leaves"
 
     ]
 }
