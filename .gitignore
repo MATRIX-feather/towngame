@@ -1,7 +1,5 @@
 data/towngame/loot_tables/_test.json
-_tmp/*
 
+_tmp
 _respack
-_zip_res_pack.sh
-_make_datapack_archive.sh
 _update.sh
