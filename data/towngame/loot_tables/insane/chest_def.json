@@ -36,8 +36,15 @@
               "function": "enchant_randomly"
             },
             {
+              "function": "set_damage",
+              "damage":{
+                "max": 0.1,
+                "min": 0
+              }
+            },
+            {
               "function": "set_nbt",
-              "tag": "{HideFlags:62,Damage:32767,AttributeModifiers:[{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0,Name:\"CBC\"}]}"
+              "tag": "{HideFlags:62,AttributeModifiers:[{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0,Name:\"CBC\"}]}"
             },
             {
               "function": "minecraft:set_lore",
@@ -92,6 +99,13 @@
               "function": "minecraft:enchant_randomly"
             },
             {
+              "function": "minecraft:set_damage",
+              "damage":{
+                "max": 0.1,
+                "min": 0
+              }
+            },
+            {
               "function": "minecraft:enchant_with_levels",
               "levels": {
                 "min": 30,
@@ -118,8 +132,8 @@
             {
               "function": "set_damage",
               "damage": {
-                "min": 0,
-                "max": 0.05
+                "max": 0.05,
+                "min": 0
               }
             }
           ]
@@ -138,8 +152,8 @@
             {
               "function": "set_nbt",
               "tag": "{CustomPotionEffects:[\
-                                              {Id:6,Amplifier:2,Duration:20},\
-                                              {Id:10,Amplifier:3,Duration:200}\
+                                              {Id:6,Amplifier:2,Duration:20,ShowParticles:0b},\
+                                              {Id:10,Amplifier:3,Duration:200,ShowParticles:0b}\
                                               ],\
                                               }"
             },
@@ -234,12 +248,12 @@
             {
               "function": "set_nbt",
               "tag": "{CustomPotionEffects:[\
-                                              {Id:1,Amplifier:19,Duration:100},\
-                                              {Id:28,Amplifier:0,Duration:600},\
-                                              {Id:8,Amplifier:29,Duration:100},\
-                                              {Id:18,Amplifier:254,Duration:200},\
-                                              {Id:14,Amplifier:0,Duration:200},\
-                                              {Id:16,Amplifier:0,Duration:200}],\
+                                              {Id:1,Amplifier:19,Duration:100,ShowParticles:0b},\
+                                              {Id:28,Amplifier:0,Duration:600,ShowParticles:0b},\
+                                              {Id:8,Amplifier:29,Duration:100,ShowParticles:0b},\
+                                              {Id:18,Amplifier:254,Duration:200,ShowParticles:0b},\
+                                              {Id:14,Amplifier:0,Duration:200,ShowParticles:0b},\
+                                              {Id:16,Amplifier:0,Duration:200,ShowParticles:0b}],\
                       Potion:\"leaping\",\
                       CustomPotionColor:16777214\
                                               }"
@@ -270,11 +284,11 @@
             {
               "function": "set_nbt",
               "tag": "{CustomPotionEffects:[\
-                                              {Duration:600,Id:1,Amplifier:5},\
-                                              {Duration:3000,Id:8,Amplifier:2},\
-                                              {Duration:600,Id:10,Amplifier:2},\
-                                              {Duration:20,Id:6,Amplifier:2},\
-                                              {Duration:600,Id:14,Amplifier:2}],\
+                                              {Duration:600,Id:1,Amplifier:5,ShowParticles:0b},\
+                                              {Duration:3000,Id:8,Amplifier:2,ShowParticles:0b},\
+                                              {Duration:600,Id:10,Amplifier:2,ShowParticles:0b},\
+                                              {Duration:20,Id:6,Amplifier:2,ShowParticles:0b},\
+                                              {Duration:600,Id:14,Amplifier:2,ShowParticles:0b}],\
                                               Potion:\"leaping\",\
                                               CustomPotionColor:65280\
                                               }"

@@ -76,10 +76,10 @@
             {
               "function": "minecraft:set_nbt",
               "tag": "{CustomPotionEffects:[\
-                  {Id:4,Amplifier:254,Duration:200},\
-                  {Id:15,Amplifier:0,Duration:200},\
-                  {Id:18,Amplifier:0,Duration:400},\
-                  {Id:19,Amplifier:1,Duration:200}],\
+                  {Id:4,Amplifier:254,Duration:200,ShowParticles:0b},\
+                  {Id:15,Amplifier:0,Duration:200,ShowParticles:0b},\
+                  {Id:18,Amplifier:0,Duration:400,ShowParticles:0b},\
+                  {Id:19,Amplifier:1,Duration:200,ShowParticles:0b}],\
                   Potion:\"harming\",\
                   CustomPotionColor:6684672,\
                 }"
