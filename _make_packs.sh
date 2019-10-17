@@ -9,7 +9,7 @@ zip -r -9 datapack.zip Changelog.md > /dev/null
 zip -r -9 datapack.zip README.md > /dev/null
 #压缩资源包(以下步骤是为了解决符号链接问题)
 cd $resources
-zip -r -9 resources.zip ./*
+zip -r -9 resources.zip ./* > /dev/null
 cd ..
 mv ./$resources/resources.zip ./
 #重命名
