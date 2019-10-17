@@ -1,9 +1,7 @@
 {
     "pack": {
         "description": [
-            {"text": "Author:CravingStatue76(MATRIX-夜翎)\n"},
-            {"text":"Version : generic,release@11.0.0-20190915\n"},
-            {"text":"Name:NiFeather Towngame"}
+            {"text":"A NiFeather Datapack"}
         ],
         "pack_format": 1
     }
