@@ -18,13 +18,14 @@ function nifeather_updater:update/main
 #tick_Current自减
 scoreboard players operation towngame_bossbar_num nife_time = tick_Current nife_time
 scoreboard players operation towngame_bossbar_num nife_time /= towngame_1s nife_time
-bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score nife_tg_border nife_stats matches 0.. run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score nife_tg_border nife_stats matches -1 run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext.dm","with":[{"color":"red","translate":"tg.stage_deathmatch.title"},{"translate":"tg.panel.head"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"gold","score":{"objective":"nife_stats","name":"player_count"}}]}
 execute at @a[tag=nife_game_1,limit=1] store result bossbar nife:game_1 value run worldborder get
 execute at @a[tag=nife_game_1,limit=1] store result score border_size nife_stats run worldborder get
-execute if score border_size nife_stats matches 1000.. run bossbar set nife:game_1 color green
-execute if score border_size nife_stats matches 500..999 run bossbar set nife:game_1 color white
-execute if score border_size nife_stats matches 200..499 run bossbar set nife:game_1 color yellow
-execute if score border_size nife_stats matches ..199 run bossbar set nife:game_1 color red
+execute if score border_size nife_stats matches 1250.. run bossbar set nife:game_1 color green
+execute if score border_size nife_stats matches 500..1241 run bossbar set nife:game_1 color white
+execute if score border_size nife_stats matches 250..499 run bossbar set nife:game_1 color yellow
+execute if score border_size nife_stats matches ..249 run bossbar set nife:game_1 color red
 #actionbar的坐标显示
 execute as @a[tag=nife_game_1] store result score @s nife_pos_X run data get entity @s Pos[0]
 execute as @a[tag=nife_game_1] store result score @s nife_pos_Y run data get entity @s Pos[1]

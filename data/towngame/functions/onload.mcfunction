@@ -9,7 +9,6 @@ scoreboard objectives add nife_pos_Z dummy {"text":"nife_pos_Z | 坐标Z"}
 scoreboard objectives add nife_tg_about trigger {"text":"nife_tg_trigger | 玩家触发"}
 scoreboard objectives add nife_P-health health {"text":"nife_P-health | 玩家生命值,只读"}
 scoreboard objectives add nife_lazer_timer dummy {"text":"nife_lazer_timer | 镭射道具计时器"}
-#scoreboard objectives add nife_sneak_time minecraft.custom:minecraft.sneak_time {"text":"nife_sneak_time | 玩家蹲下"}
 scoreboard objectives add nife_var_use minecraft.used:minecraft.carrot_on_a_stick {"text":"nife_var_use | 道具使用,萝卜钓竿"}
 scoreboard players set nife_tglobby_countdown nife_stats 0
 #初始化bossbar
@@ -18,11 +17,13 @@ bossbar set nife:tg_lobby_countdownbar max 30
 bossbar set nife:tg_lobby_countdownbar value 0
 bossbar set nife:tg_lobby_countdownbar color white
 bossbar set nife:tg_lobby_countdownbar players @a[tag=nife_tg_queue]
+#fixes
 tag @a remove nife_tg_queue
 tag @a remove nife_tg_queue_exit
+scoreboard players set nife_tglobby_count nife_stats 0
+scoreboard players set nife_tglobby_count nife_time 0
 #函数插件调起
 function #towngame:plugin.onload
 #UI
-#execute if score has_pm nife_stats matches 0 run 
 tellraw @a [{"color":"dark_aqua","bold":"true","translate":"tg.name"},{"color":"gray","bold":"true","text":" >> "},{"color":"green","bold":"true","text":"NiFeather Towngame已被加载"}]
 function towngame:about

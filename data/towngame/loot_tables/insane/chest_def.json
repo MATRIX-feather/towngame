@@ -43,48 +43,6 @@
               }
             },
             {
-              "function": "set_nbt",
-              "tag": "{HideFlags:62,AttributeModifiers:[{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0,Name:\"CBC\"}]}"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": ""
-                },
-                {
-                  "text": "穿在任何一个地方时",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "+10 最大生命值",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+10 攻击速度",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+100 盔甲韧性",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+100 盔甲",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+10 击退抗性",
-                  "color": "blue",
-                  "italic": false
-                }
-              ]
-            },
-            {
               "function": "set_damage",
               "damage": 0
             }
@@ -153,7 +111,8 @@
               "function": "set_nbt",
               "tag": "{CustomPotionEffects:[\
                                               {Id:6,Amplifier:2,Duration:20,ShowParticles:0b},\
-                                              {Id:10,Amplifier:3,Duration:200,ShowParticles:0b}\
+                                              {Id:10,Amplifier:3,Duration:200,ShowParticles:0b},\
+                                              {Id:22,Amplifier:3,Duration:600}\
                                               ],\
                                               }"
             },
@@ -183,48 +142,6 @@
                 "min": 30,
                 "max": 90
               }
-            },
-            {
-              "function": "set_nbt",
-              "tag": "{HideFlags:62,AttributeModifiers:[{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0,Name:\"CBC\"},{UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0,Name:\"CBC\"}]}"
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {
-                  "text": ""
-                },
-                {
-                  "text": "穿在任何一个地方时",
-                  "color": "gray",
-                  "italic": false
-                },
-                {
-                  "text": "+10 最大生命值",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+10 攻击速度",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+100 盔甲韧性",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+100 盔甲",
-                  "color": "blue",
-                  "italic": false
-                },
-                {
-                  "text": "+10 击退抗性",
-                  "color": "blue",
-                  "italic": false
-                }
-              ]
             },
             {
               "function": "set_damage",

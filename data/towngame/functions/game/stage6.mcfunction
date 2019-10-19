@@ -14,7 +14,7 @@ execute at @e[type=minecraft:armor_stand,tag=nife_func_1] run worldborder center
 #重新设置边界
 execute at @e[type=minecraft:armor_stand,tag=nife_func_1] run worldborder set 600
 #重新缩圈
-execute at @e[type=minecraft:armor_stand,tag=nife_func_1] run worldborder set 300 25
+execute at @e[type=minecraft:armor_stand,tag=nife_func_1] run worldborder set 250 25
 #发射烟花
 execute at @e[type=minecraft:armor_stand,tag=nife_func_1] run summon minecraft:firework_rocket ~ ~50 ~ {LifeTime:0,FireworksItem:{id:"minecraft:firework_rocket",Count:1,tag:{Fireworks:{Explosions:[{Trail:1b,Type:1,Colors:[I;16777215],FadeColors:[I;16777215]},{Trail:1b,Type:2,Colors:[I;16777215],FadeColors:[I;16777215]},{Flicker:1b,Type:3,Colors:[I;0],FadeColors:[I;16645629]},{Type:2,Colors:[I;0],FadeColors:[I;16777215]},{Type:2,Colors:[I;0],FadeColors:[I;16777215]}]}}}}
 #更新坐标

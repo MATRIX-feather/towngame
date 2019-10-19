@@ -1,4 +1,3 @@
-
 particle minecraft:lava ^ ^ ^ 0 0 0 1 1 force
 
 scoreboard players add @s test 1

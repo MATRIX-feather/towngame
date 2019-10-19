@@ -19,3 +19,8 @@ scoreboard players set nife_tg_lock nife_stats 1
 function #towngame:plugin.event.player_join_queue
 #将人tp回去
 tp @p ~ ~ ~10
+#检测队列中是否有玩家
+scoreboard players set player_count nife_stats 0
+execute at @a[tag=nife_tg_queue] run scoreboard players add player_count nife_stats 1
+execute if score player_count nife_stats matches 1.. run function towngame:lobby/event/start_count
+execute if score player_count nife_stats matches 0 run function towngame:lobby/event/reset_count
