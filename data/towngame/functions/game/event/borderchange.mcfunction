@@ -9,7 +9,7 @@ execute if score nife_tg_border nife_stats matches 6..6 run function towngame:ga
 execute if score nife_tg_border nife_stats matches 7..7 run function towngame:game/stage7
 execute if score nife_tg_border nife_stats matches 7..7 run scoreboard players set nife_tg_bordertime nife_stats 2
 execute if score nife_tg_border nife_stats matches 8..8 run function towngame:game/stage_resize
-execute if score resize_times nife_stats matches 4.. run function towngame:game/stage_deathmatch
+execute if score resize_times nife_stats >= dm_time nife_stats run function towngame:game/stage_deathmatch
 #箱子填充事件
 execute if score nife_tg_border nife_stats matches 1..7 if score nife_tg_insanemode nife_tg_settings matches 1 run function towngame:game/event/chestrefill_insane
 execute if score nife_tg_border nife_stats matches 1..7 if score nife_tg_insanemode nife_tg_settings matches 0 run function towngame:game/event/chestrefill
