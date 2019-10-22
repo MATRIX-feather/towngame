@@ -6,9 +6,9 @@ title @a[tag=nife_game_1] title [{"text":"⚠","color":"red","bold":true},{"tran
 title @a[tag=nife_game_1] subtitle [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stagechange.subt"},{"text":"⚠","color":"red","bold":true}]
 #毒圈中心改变
 #生成盔甲架
-execute at @e[tag=spread] run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["nife_func_1"]}
+execute at @e[tag=game1_spread] run summon minecraft:armor_stand ~ ~ ~ {Invisible:1b,Tags:["nife_func_1"]}
 #扩散盔甲架
-execute at @e[tag=spread] run spreadplayers ~ ~ 20 100 false @e[type=minecraft:armor_stand,tag=nife_func_1]
+execute at @e[tag=game1_spread] run spreadplayers ~ ~ 20 100 false @e[type=minecraft:armor_stand,tag=nife_func_1]
 #设置新的中心
 execute at @e[type=minecraft:armor_stand,tag=nife_func_1] run worldborder center ~ ~
 #重新设置边界

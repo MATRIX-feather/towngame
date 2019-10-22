@@ -11,16 +11,16 @@ scoreboard players set nife_tg_title nife_time 0
 #设置旁观者
 execute at @a[tag=nife_game_1] run gamemode adventure @a[distance=0..]
 #设置边界
-execute at @e[tag=spread] run worldborder set 1300 10
-execute at @e[tag=spread] run worldborder center ~ ~
-execute at @e[tag=spread] run worldborder damage amount 0
+execute at @e[tag=game1_spread] run worldborder set 1300 10
+execute at @e[tag=game1_spread] run worldborder center ~ ~
+execute at @e[tag=game1_spread] run worldborder damage amount 0
 #设置bossbar
 bossbar set nife:game_1 value 0
 bossbar set nife:game_1 color white
 #重置地图数据
 execute at @e[tag=game1_atk] run data merge block ~ ~ ~ {LootTable:"chest/empty"}
 execute at @e[tag=game1_def] run data merge block ~ ~ ~ {LootTable:"chest/empty"}
-execute at @e[tag=spread] run time set day
+execute at @e[tag=game1_spread] run time set day
 kill @e[tag=towngame_entity]
 execute at @e[tag=nife_tg_lobby] run kill @e[type=arrow,distance=0..]
 execute at @e[tag=nife_tg_lobby] run kill @e[type=item,distance=0..]

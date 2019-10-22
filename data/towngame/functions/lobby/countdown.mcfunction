@@ -29,4 +29,4 @@ execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobb
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 100 run title @a[distance=0..] title {"color":"gold","bold":"true","text":"2..."}
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 120 run title @a[distance=0..] title {"color":"gold","bold":"true","text":"1..."}
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 140 run scoreboard players set nife_tglobby_title nife_stats 0
-execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 140 run execute at @e[tag=spread] run function towngame:game/start
+execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 140 run execute at @e[tag=game1_spread] run function towngame:game/start

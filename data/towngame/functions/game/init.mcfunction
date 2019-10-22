@@ -23,8 +23,8 @@ clear @a[tag=nife_game_1]
 execute at @r[tag=nife_game_1] run worldborder damage amount 0
 execute at @r[tag=nife_game_1] run worldborder set 1
 execute at @r[tag=nife_game_1] run worldborder set 1500 20
-execute at @e[tag=spread] run worldborder center ~ ~
-execute at @e[tag=spread] run time set noon
+execute at @e[tag=game1_spread] run worldborder center ~ ~
+execute at @e[tag=game1_spread] run time set noon
 execute at @r[tag=nife_game_1] run difficulty hard
 execute at @r[tag=nife_game_1] run gamerule mobGriefing false
 execute at @r[tag=nife_game_1] run gamerule doMobSpawning false
@@ -64,8 +64,8 @@ bossbar set nife:game_1 max 1500
 bossbar set nife:game_1 color white
 bossbar set nife_game_1 style notched_6
 bossbar set nife:game_1 players @a[tag=nife_game_1]
-execute as @e[tag=spread] store result score nife_tg_bcenterZ nife_pos_Z run data get entity @s Pos[2]
-execute as @e[tag=spread] store result score nife_tg_bcenterX nife_pos_X run data get entity @s Pos[0]
+execute as @e[tag=game1_spread] store result score nife_tg_bcenterZ nife_pos_Z run data get entity @s Pos[2]
+execute as @e[tag=game1_spread] store result score nife_tg_bcenterX nife_pos_X run data get entity @s Pos[0]
 function towngame:game/ui/startmsg
 #计算玩家数量
 scoreboard players set player_count nife_stats 0
