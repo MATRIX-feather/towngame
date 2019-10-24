@@ -5,6 +5,23 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:book",
+          "weight": 10,
+          "functions":[
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels":{
+                "min": 30,
+                "max": 90
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:shield",
           "weight": 10,
           "functions": [

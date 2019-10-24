@@ -5,7 +5,7 @@ scoreboard players set nife_game1_has_def nife_stats 0
 scoreboard players set nife_game1_has_anv nife_stats 0
 scoreboard players set nife_game1_has_lobby nife_stats 0
 #设置
-execute if entity @e[tag=spread] run scoreboard players set nife_game1_hascenter nife_stats 1
+execute if entity @e[tag=game1_spread] run scoreboard players set nife_game1_hascenter nife_stats 1
 execute if entity @e[tag=game1_atk] run scoreboard players set nife_game1_has_atk nife_stats 1
 execute if entity @e[tag=game1_def] run scoreboard players set nife_game1_has_def nife_stats 1
 execute if entity @e[tag=game1_anv] run scoreboard players set nife_game1_has_anv nife_stats 1

@@ -11,12 +11,12 @@ scoreboard objectives add nife_P-health health {"text":"nife_P-health | 玩家�
 scoreboard objectives add nife_lazer_timer dummy {"text":"nife_lazer_timer | 镭射道具计时器"}
 scoreboard objectives add nife_var_use minecraft.used:minecraft.carrot_on_a_stick {"text":"nife_var_use | 道具使用,萝卜钓竿"}
 scoreboard players set nife_tglobby_countdown nife_stats 0
+scoreboard players set 1s nife_stats 20
 #初始化bossbar
-bossbar add nife:tg_lobby_countdownbar {"text":"剩余时间"}
+bossbar add nife:tg_lobby_countdownbar {"text":""}
 bossbar set nife:tg_lobby_countdownbar max 30
 bossbar set nife:tg_lobby_countdownbar value 0
 bossbar set nife:tg_lobby_countdownbar color white
-bossbar set nife:tg_lobby_countdownbar players @a[tag=nife_tg_queue]
 #fixes
 tag @a remove nife_tg_queue
 tag @a remove nife_tg_queue_exit

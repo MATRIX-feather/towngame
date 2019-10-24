@@ -6,6 +6,7 @@ execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode n
 #on
 execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode nife_tg_settings matches 0 run scoreboard players set nife_tg_insanemode nife_tg_settings 1
 #off-process
-execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode nife_tg_settings matches 2 run function towngame:custom/var/insane_off
+#execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode nife_tg_settings matches 2 run function towngame:custom/var/insane_off
 execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode nife_tg_settings matches 2 run scoreboard players set nife_tg_insanemode nife_tg_settings 0
-execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode nife_tg_settings matches 1 run function towngame:custom/var/insane_on
+#execute if score nife_tg_lock nife_stats matches 0 if score nife_tg_insanemode nife_tg_settings matches 1 run function towngame:custom/var/insane_on
+function towngame:custom/displayvalues

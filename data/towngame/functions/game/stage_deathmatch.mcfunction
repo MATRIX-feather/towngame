@@ -14,9 +14,3 @@ effect give @a[tag=nife_game_1] minecraft:health_boost 1000000 30 true
 effect give @a[tag=nife_game_1] minecraft:blindness 1 1 true
 effect give @a[tag=nife_game_1] minecraft:hunger 1000000 1 true
 effect give @a[tag=nife_game_1] minecraft:instant_health 1 20 true
-
-#新加入了"DeathMatch"缩圈阶段,将会在第三次重新缩圈时被触发
-#触发后的效果 : 
-#        * 边界继续缩小至直径50格
-#        * 游戏将不会继续缩圈
-#        * 所有玩家都将获得1,000,000秒的凋零1&饥饿2效果

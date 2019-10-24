@@ -1,6 +1,6 @@
 #缩圈事件,由main调起,非循环
 scoreboard players add nife_tg_border nife_stats 1
-execute if score resize_times nife_stats >= dm_time nife_stats run function towngame:game/stage_deathmatch
+execute if score resize_times nife_stats >= dm_time nife_tg_settings run function towngame:game/stage_deathmatch
 execute if score nife_tg_border nife_stats matches 1..1 run function towngame:game/stage1
 execute if score nife_tg_border nife_stats matches 2..2 run function towngame:game/stage2
 execute if score nife_tg_border nife_stats matches 3..3 run function towngame:game/stage3

@@ -5,6 +5,30 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 90,
+                "max": 90
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.20,
+                "min": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:crossbow",
           "weight": 50,
           "functions": [
