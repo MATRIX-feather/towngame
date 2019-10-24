@@ -47,14 +47,6 @@ execute if score nife_tg_insanemode nife_tg_settings matches 1 run advancement g
 gamemode adventure @a[tag=nife_game_1]
 #函数插件调起
 function #towngame:plugin.endgame
-#去除tag
-tag @a remove nife_game_1
-tag @a remove town_rank1
-tag @a remove town_rank2
-tag @a remove town_rank3
-tag @a remove nife_tgadv_enabled
-
-
 #善后工作
 #  修复bossbar显示错误
 bossbar set nife:game_1 players @a[tag=nife_game_1]
@@ -64,3 +56,9 @@ scoreboard players set nife_tglobby_countdown nife_time 4660
 bossbar set nife:tg_lobby_countdownbar visible true
 #解锁自定义值
 scoreboard players set nife_tg_lock nife_stats 0
+#去除tag
+tag @a remove nife_game_1
+tag @a remove town_rank1
+tag @a remove town_rank2
+tag @a remove town_rank3
+tag @a remove nife_tgadv_enabled
