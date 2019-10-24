@@ -3,6 +3,6 @@ towngame_datapack
 #资源包文件名(不带后缀)
 resources
 #资源包文件夹名(支持符号链接)
-_respack
+respack
 #版本
 generic,daily @ 11.3.0-00000000

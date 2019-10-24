@@ -1,0 +1,20 @@
+{
+  "var.lazer.shoot": {
+    "sounds": [
+      "random/explode1",
+      "random/explode2",
+      "random/explode3",
+      "random/explode4"
+    ],
+    "subtitle": "tg.var.lazer.shoot"
+  },
+  "var.lazer.damage":{
+    "sounds": [
+      "random/explode1",
+      "random/explode2",
+      "random/explode3",
+      "random/explode4"
+    ],
+    "subtitle": "tg.var.lazer.damage"
+  }
+}
