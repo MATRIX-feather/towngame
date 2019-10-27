@@ -1,5 +1,5 @@
 {
     "values": [
-        "nifeather_updater:update/main"
+        "nifeather_updater:ingame_loop"
     ]
 }

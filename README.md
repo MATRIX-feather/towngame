@@ -18,4 +18,4 @@
 ====================================
 > 度盘链接(停更) : [密码:vest](https://pan.baidu.com/s/1NuznUUlvsl7AmQfc3yIGBg)
 > github : [github](https://github.com/MATRIX-feather/towngame)
-> 码云(旧版) : [码云](https://gitee.com/matrix-feather/towngame)
+> 码云() : [码云](https://gitee.com/matrix-feather/towngame)

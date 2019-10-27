@@ -49,7 +49,7 @@ gamemode adventure @a[tag=nife_game_1]
 function #towngame:plugin.endgame
 #善后工作
 #  修复bossbar显示错误
-bossbar set nife:game_1 players @a[tag=nife_game_1]
+bossbar set nife:game_1 players
 #   设置大厅队列时间
 scoreboard players set nife_tg_lock nife_stats 0
 scoreboard players set nife_tglobby_countdown nife_time 4660
