@@ -1,0 +1,85 @@
+{
+    "pools": [
+        {
+            "rolls": 1,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:suspicious_stew",
+                    "weight": 100,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag":"{\
+                Effects:[\
+                          {EffectId:1,EffectDuration:600},\
+                          {EffectId:2,EffectDuration:1200},\
+                          {EffectId:3,EffectDuration:600},\
+                          {EffectId:4,EffectDuration:600},\
+                          {EffectId:5,EffectDuration:600},\
+                          {EffectId:6,EffectDuration:600},\
+                          {EffectId:7,EffectDuration:20},\
+                          {EffectId:8,EffectDuration:600},\
+                          {EffectId:9,EffectDuration:600},\
+                          {EffectId:10,EffectDuration:600},\
+                          {EffectId:11,EffectDuration:600},\
+                          {EffectId:12,EffectDuration:600},\
+                          {EffectId:13,EffectDuration:600},\
+                          {EffectId:14,EffectDuration:600},\
+                          {EffectId:15,EffectDuration:600},\
+                          {EffectId:16,EffectDuration:600},\
+                          {EffectId:17,EffectDuration:600},\
+                          {EffectId:18,EffectDuration:1200},\
+                          {EffectId:19,EffectDuration:1200},\
+                          {EffectId:20,EffectDuration:600},\
+                          {EffectId:22,EffectDuration:1200},\
+                          {EffectId:23,EffectDuration:20},\
+                          {EffectId:24,EffectDuration:20},\
+                          {EffectId:25,EffectDuration:20},\
+                          {EffectId:26,EffectDuration:600},\
+                          {EffectId:27,EffectDuration:600},\
+                          {EffectId:28,EffectDuration:600},\
+                          {EffectId:29,EffectDuration:600},\
+                          {EffectId:30,EffectDuration:600},\
+                          {EffectId:31,EffectDuration:20}]\
+                }"
+                        },
+                        {
+                            "function": "minecraft:set_name",
+                            "name": [
+                                {
+                                    "text": "\u00a7r"
+                                },
+                                {
+                                    "translate": "tg.atk.stew.name"
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_lore",
+                            "lore": [
+                                {
+                                    "translate": "tg.atk.stew.lore1",
+                                    "with": [
+                                        {
+                                            "text":"CravingStatue76"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "translate": "tg.atk.stew.lore2"
+                                },
+                                {
+                                    "translate": "tg.atk.stew.lore3"
+                                },
+                                {
+                                    "translate": "tg.atk.stew.lore4"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-particle minecraft:end_rod ~ ~ ~ 0 0 0 0 0 force
+particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
 scoreboard players add @s nife_lazer_timer 1
 execute unless block ~ ~ ~ #towngame:air run scoreboard players add @s nife_lazer_timer 300
 execute if block ~ ~ ~ #minecraft:leaves run scoreboard players add @s nife_lazer_timer 20

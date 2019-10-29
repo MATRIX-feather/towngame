@@ -11,7 +11,7 @@
                 {
                     "type": "minecraft:loot_table",
                     "weight": 30,
-                    "name":"towngame:insane/chest_var"
+                    "name":"towngame:insane/chest_gadgets"
                 }
             ]
         },
@@ -58,134 +58,11 @@
                             "tag": "{HideFlags:62,AttributeModifiers:[{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:5,AttributeName:\"generic.attackDamage\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:50,AttributeName:\"generic.attackSpeed\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:12,AttributeName:\"generic.maxHealth\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:50,AttributeName:\"generic.armor\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:50,AttributeName:\"generic.armorToughness\",Operation:0}]}"
                         },
                         {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "text": ""
-                                },
-                                {
-                                    "text": "穿在任何一个地方时",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+12 最大生命值",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+50 攻击速度",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+5 攻击伤害",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+50 盔甲韧性",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+50 盔甲",
-                                    "color": "blue",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
                             "function": "minecraft:set_damage",
                             "damage": {
                                 "max": 0.3,
                                 "min": 0
                             }
-                        }
-                    ]
-                },
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:crossbow",
-                    "weight": 50,
-                    "functions": [
-                        {
-                            "function": "minecraft:enchant_randomly"
-                        },
-                        {
-                            "function": "minecraft:enchant_with_levels",
-                            "levels": {
-                                "min": 15,
-                                "max": 30
-                            }
-                        },
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{Enchantments:[{lvl:5s,id:\"minecraft:quick_charge\"}]}"
-                        },
-                        {
-                            "function": "minecraft:set_damage",
-                            "damage": {
-                                "max": 0.10,
-                                "min": 0
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "rolls": 1,
-            "entries": [
-                {
-                    "type": "minecraft:item",
-                    "name": "minecraft:diamond_chestplate",
-                    "functions": [
-                        {
-                            "function": "minecraft:set_nbt",
-                            "tag": "{HideFlags:62,AttributeModifiers:[{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.attackSpeed\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.maxHealth\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:10,AttributeName:\"generic.knockbackResistance\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armor\",Operation:0},{Name:\"CBC\",UUIDMost:1L,UUIDLeast:1L,Amount:100,AttributeName:\"generic.armorToughness\",Operation:0}]}"
-                        },
-                        {
-                            "function": "minecraft:set_lore",
-                            "lore": [
-                                {
-                                    "text": ""
-                                },
-                                {
-                                    "text": "穿在任何一个地方时",
-                                    "color": "gray",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+10 最大生命值",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+10 攻击速度",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+100 盔甲韧性",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+100 盔甲",
-                                    "color": "blue",
-                                    "italic": false
-                                },
-                                {
-                                    "text": "+10 击退抗性",
-                                    "color": "blue",
-                                    "italic": false
-                                }
-                            ]
-                        },
-                        {
-                            "function": "minecraft:set_damage",
-                            "damage": -1
                         }
                     ]
                 }

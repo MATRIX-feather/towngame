@@ -1,0 +1,1 @@
+execute as @e[tag=nife_tg_point] run data merge entity @s {Invisible:1}

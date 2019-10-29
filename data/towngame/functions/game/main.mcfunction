@@ -1,10 +1,12 @@
 #由tick函数调起,达到条件后循环执行
-#1min = 1200tick | 30sec = 600tick | 10sec = 200tick | 20sec = 400tick
-#缩圈检测
+#tick任务
 scoreboard players remove tick_Current nife_time 1
 execute if score tick_Current nife_time matches 0..0 run function towngame:game/event/borderchange
+scoreboard players operation towngame_bossbar_num nife_time = tick_Current nife_time
+scoreboard players operation towngame_bossbar_num nife_time /= towngame_1s nife_time
 #玩家死亡
 execute if entity @r[scores={nife_deaths=1..},tag=nife_game_1] run function towngame:game/event/death
+#设置其他人为旁观模式
 execute at @a[tag=nife_game_1] run gamemode spectator @a[distance=0..,tag=!nife_game_1]
 #去除插在地上的箭
 kill @e[type=arrow,nbt={inGround:1b}]
@@ -12,19 +14,18 @@ kill @e[type=arrow,nbt={inGround:1b}]
 clear @a[tag=nife_game_1] minecraft:chest
 clear @a[tag=nife_game_1] minecraft:glass_bottle
 #子任务 道具检测
-function towngame:game/var/main.legacy
-execute as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/var/main
-function nifeather_updater:update/main
-#tick_Current自减
-scoreboard players operation towngame_bossbar_num nife_time = tick_Current nife_time
-scoreboard players operation towngame_bossbar_num nife_time /= towngame_1s nife_time
-bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score nife_tg_gadgets nife_tg_settings matches 1 as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/gadgets/main
+execute if score nife_tg_gadgets nife_tg_settings matches 0 as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/gadgets/disabled
+function nifeather_updater:ingame_loop
+#bossbar1务
 execute at @a[tag=nife_game_1,limit=1] store result bossbar nife:game_1 value run worldborder get
 execute at @a[tag=nife_game_1,limit=1] store result score border_size nife_stats run worldborder get
-execute if score border_size nife_stats matches 1000.. run bossbar set nife:game_1 color green
-execute if score border_size nife_stats matches 500..999 run bossbar set nife:game_1 color white
-execute if score border_size nife_stats matches 200..499 run bossbar set nife:game_1 color yellow
-execute if score border_size nife_stats matches ..199 run bossbar set nife:game_1 color red
+execute if score nife_tg_border nife_stats matches 0.. run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score nife_tg_border nife_stats matches -1 run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext.dm","with":[{"color":"red","translate":"tg.stage_deathmatch.title"},{"translate":"tg.panel.head"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"gold","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score border_size nife_stats matches 1250.. run bossbar set nife:game_1 color green
+execute if score border_size nife_stats matches 500..1241 run bossbar set nife:game_1 color white
+execute if score border_size nife_stats matches 250..499 run bossbar set nife:game_1 color yellow
+execute if score border_size nife_stats matches ..249 run bossbar set nife:game_1 color red
 #actionbar的坐标显示
 execute as @a[tag=nife_game_1] store result score @s nife_pos_X run data get entity @s Pos[0]
 execute as @a[tag=nife_game_1] store result score @s nife_pos_Y run data get entity @s Pos[1]

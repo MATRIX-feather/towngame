@@ -5,6 +5,30 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name": "minecraft:bow",
+          "weight": 30,
+          "functions": [
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 90,
+                "max": 90
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.20,
+                "min": 0
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:crossbow",
           "weight": 50,
           "functions": [
@@ -85,39 +109,9 @@
           "weight": 5
         },
         {
-          "type": "minecraft:item",
-          "name": "minecraft:suspicious_stew",
-          "weight": 1,
-          "functions": [
-            {
-              "function": "minecraft:set_nbt",
-              "tag":"{\
-                Effects:[{EffectId:2,Amplifier:1,EffectDuration:1200},\
-                         {EffectId:4,Amplifier:99,EffectDuration:1200},\
-                         {EffectId:7,Amplifier:1,EffectDuration:20},\
-                         {EffectId:11,Amplifier:1,EffectDuration:1200},\
-                         {EffectId:15,Amplifier:0,EffectDuration:600},\
-                         {EffectId:18,Amplifier:0,EffectDuration:3600},\
-                         {EffectId:20,Amplifier:3,EffectDuration:900}]\
-                }"
-            },
-            {
-              "function": "minecraft:set_name",
-              "name":[
-                {"text":"\u00a7r"},
-                {"translate": "tg.atk.kalslana_stew.name"}
-              ]
-            },
-            {
-              "function": "minecraft:set_lore",
-              "lore": [
-                {"translate": "tg.atk.kalslana_stew.lore1"},
-                {"translate": "tg.atk.kalslana_stew.lore2"},
-                {"translate": "tg.atk.kalslana_stew.lore3"},
-                {"translate": "tg.atk.kalslana_stew.lore4"}
-              ]
-            }
-          ]
+          "type": "minecraft:loot_table",
+          "name":"towngame:shared/stew",
+          "weight": 1
         },
         {
           "type": "minecraft:item",

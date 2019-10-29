@@ -1,3 +1,5 @@
 {
-    "values": []
+    "values": [
+        "nifeather_updater:ingame_loop"
+    ]
 }

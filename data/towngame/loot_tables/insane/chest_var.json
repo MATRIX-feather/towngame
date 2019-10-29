@@ -51,6 +51,10 @@
       "rolls": 1,
       "entries": [
         {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
           "type": "minecraft:item",
           "name": "minecraft:carrot_on_a_stick",
           "weight": 10,
@@ -106,20 +110,20 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:carrot_on_a_stick",
-          "weight": 1,
+          "weight": 10,
           "functions": [
             {
               "function": "minecraft:set_name",
               "name": [
                 {"text":"\u00a7r"},
-                {"translate": "tg.var.teleporter.name"}
+                {"translate": "tg.var.player_swap.name"}
               ]
             },
             {
               "function": "minecraft:set_lore",
               "lore": [
                 {"text":"\u00a7r"},
-                {"translate": "tg.var.teleporter.lore"},
+                {"translate": "tg.var.player_swap.lore"},
                 [{"keybind": "key.use"},{"translate":"tg.use"}]
               ]
             },
