@@ -5,4 +5,4 @@ resources
 #资源包文件夹名(支持符号链接)
 respack
 #版本
-generic,daily @ 11.3.0-00000000
+generic,daily @ 11.4.0-20191029

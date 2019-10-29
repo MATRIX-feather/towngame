@@ -50,10 +50,11 @@
     *   第2~7次缩圈前的等待时间
     *   第7次缩圈后,重新缩圈的等待时间
     *   触发DeathMatch的重新缩圈次数
+    *   道具是否可用
 *   大厅:
     *   游戏的最小开始人数
 *   其他:
-    *   Insane(疯狂)模式
+    *   攻击/防御物资点和补给的insane模式
 
 ### 以上数值对应的指令为:
 *   游戏中:
@@ -61,21 +62,26 @@
     *   `function towngame:custom/game/borderchangetime_add` || `function towngame:custom/game/borderchangetime_remove`
     *   `function towngame:custom/game/resizetime_add` || `function towngame:custom/game/resizetime_remove`
     *   `function towngame:custom/game/dm_add` || `function towngame:custom/game/dm_remove`
+    *   `function towngame:custom/game/toggle_gadgets`
 
 *   大厅:
     *   `function towngame:custom/lobby/queue_min_add` || `funtion towngame:custom/lobby/queue_min_remove`
 
-*   Insane(疯狂模式) : `function towngame:custom/toggleinsane`
+*   Insane(疯狂模式) : 
+    *   武器 `function towngame:custom/chests/toggle_atk`
+    *   防御 `function towngame:custom/chests/toggle_def`
+    *   补给 `function towngame:custom/chests/toggle_supply`
 
 *   要显示当前的自定义设置,输入 : `function towngame:custom/displayvalues`
 
 # 语言
 
-要自定义Towngame的显示语言,在材质包中找到`assets/minecraft/lang/<你的语言代码>.json`即可
+要自定义Towngame的显示语言,在材质包中找到`assets/minecraft/lang/<你的语言代码>.json`即可.
+* 我们允许您自行制作一份Towngame语言文件,如果您希望贡献翻译
 
 # 附加组件
 
-Towngame内建了一个函数标签,您可以用这些函数标签制作towngame的附加组件.
+Towngame内建了几个函数标签,您可以用这些函数标签制作towngame的附加组件.
 
 以下是这些标签的名称及描述:
 *   #towngame:plugin.endgame
