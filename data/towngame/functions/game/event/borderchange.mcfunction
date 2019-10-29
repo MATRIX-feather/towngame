@@ -10,9 +10,10 @@ execute if score nife_tg_border nife_stats matches 6..6 run function towngame:ga
 execute if score nife_tg_border nife_stats matches 7..7 run function towngame:game/stage7
 execute if score nife_tg_border nife_stats matches 7..7 run scoreboard players set nife_tg_bordertime nife_stats 2
 execute if score nife_tg_border nife_stats matches 8..8 run function towngame:game/stage_resize
+scoreboard players operation changetimes nife_tg_border = commonborder nife_tg_settings
+function towngame:game/loop/border_remove
 #箱子填充事件
-execute if score nife_tg_border nife_stats matches 1..7 if score nife_tg_insanemode nife_tg_settings matches 1 run function towngame:game/event/chestrefill_insane
-execute if score nife_tg_border nife_stats matches 1..7 if score nife_tg_insanemode nife_tg_settings matches 0 run function towngame:game/event/chestrefill
+execute if score nife_tg_border nife_stats matches 1..7 run function towngame:game/event/chestrefill
 #重设边界
 execute at @e[type=armor_stand,tag=spread] run worldborder damage amount 0.1
 execute at @e[type=armor_stand,tag=spread] run worldborder damage buffer 0

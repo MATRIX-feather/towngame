@@ -1,0 +1,191 @@
+{
+  "pools": [
+    {
+        "rolls": 2,
+        "entries": [
+          {
+              "type": "minecraft:item",
+              "name": "minecraft:cooked_mutton",
+              "weight": 20,
+              "functions":[
+                  {
+                      "function": "minecraft:set_count",
+                      "count":{
+                          "max": 8,
+                          "min": 0
+                      }
+                  }
+              ]
+          },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:experience_bottle",
+                "weight": 20,
+                "functions": [
+                    {
+                        "function": "minecraft:set_count",
+                        "count": {
+                            "max": 8,
+                            "min": 1
+                        }
+                    }
+                ]
+            },
+            {
+                "type": "minecraft:item",
+                "name": "minecraft:diamond",
+                "weight": 20,
+                "functions": [
+                    {
+                        "function": "minecraft:set_count",
+                        "count": {
+                            "max": 8,
+                            "min": 1
+                        }
+                    }
+                ]
+            }
+        ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:empty",
+          "weight": 50
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.glow.name"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.glow.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
+                
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[player_glow],CustomModelData:1}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.summon_horse.name"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.summon_horse.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[summon_horse],CustomModelData:2}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.player_swap.name"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.player_swap.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[teleporter],CustomModelData:3}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.tnt.name"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.tnt.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[tnt],CustomModelData:4}"
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:carrot_on_a_stick",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_name",
+              "name": [
+                {"text":"\u00a7r"},
+                {"translate": "tg.gadgets.lazer.name"}
+              ]
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"text":"\u00a7r"},
+                {"translate":"tg.gadgets.lazer.lore"},
+                [{"keybind": "key.use"},{"translate":"tg.use"}]
+              ]
+            },
+            {
+                "function": "minecraft:set_nbt",
+                "tag": "{tg_tags:[lazer],CustomModelData:5}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -14,9 +14,10 @@ kill @e[type=arrow,nbt={inGround:1b}]
 clear @a[tag=nife_game_1] minecraft:chest
 clear @a[tag=nife_game_1] minecraft:glass_bottle
 #子任务 道具检测
-execute as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/var/main
+execute if score nife_tg_gadgets nife_tg_settings matches 1 as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/gadgets/main
+execute if score nife_tg_gadgets nife_tg_settings matches 0 as @a[scores={nife_var_use=1..}] at @a[scores={nife_var_use=1..}] run function towngame:game/gadgets/disabled
 function nifeather_updater:ingame_loop
-#bossbar任务
+#bossbar1务
 execute at @a[tag=nife_game_1,limit=1] store result bossbar nife:game_1 value run worldborder get
 execute at @a[tag=nife_game_1,limit=1] store result score border_size nife_stats run worldborder get
 execute if score nife_tg_border nife_stats matches 0.. run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
