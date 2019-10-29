@@ -13,9 +13,10 @@
 * Towngame是一个PVP小游戏
 * 尽可能多地收集资源,并确保自己在边界内,击败其他的玩家以获得胜利
 * 请将资源包放置在第一位
+* 详细介绍见源码页面中的wiki.md
 
-下载/源码
+源码
 ====================================
-> 度盘链接(停更) : [密码:vest](https://pan.baidu.com/s/1NuznUUlvsl7AmQfc3yIGBg)
-> github : [github](https://github.com/MATRIX-feather/towngame)
-> 码云() : [码云](https://gitee.com/matrix-feather/towngame)
+> [github](https://github.com/MATRIX-feather/towngame)
+
+> [码云](https://gitee.com/matrix-feather/towngame)
