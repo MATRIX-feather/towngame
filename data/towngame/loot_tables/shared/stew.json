@@ -5,8 +5,19 @@
             "entries": [
                 {
                     "type": "minecraft:item",
+                    "name": "minecraft:minecart",
+                    "weight": 1,
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CanPlaceOn:[\"#minecraft:rails\"]}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
                     "name": "minecraft:suspicious_stew",
-                    "weight": 100,
+                    "weight": 1,
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",

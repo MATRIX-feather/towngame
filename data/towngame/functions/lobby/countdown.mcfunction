@@ -2,7 +2,7 @@
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 80 run playsound minecraft:ui.button.click master @a[distance=0..]
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 100 run playsound minecraft:ui.button.click master @a[distance=0..]
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 120 run playsound minecraft:ui.button.click master @a[distance=0..]
-execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 140 run playsound minecraft:entity.wither.death master @a[distance=0..] ~ ~ ~ 10000 2
+
 #Subtitle
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 80 run title @a[distance=0..] subtitle {"color":"red","bold":"true","text":"\u00a7a■\u00a7c■■"}
 execute at @e[type=minecraft:armor_stand,tag=nife_tg_lobby] if score nife_tglobby_title nife_time matches 100 run title @a[distance=0..] subtitle {"color":"red","bold":"true","text":"\u00a7a■■\u00a7c■"}

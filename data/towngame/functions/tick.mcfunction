@@ -3,7 +3,7 @@
 #1:开始
 #2:结束
 execute if score nife_tg_title nife_stats matches 1..3 run scoreboard players add nife_tg_title nife_time 1
-execute if score game1 nife_stats matches 0 at @e[tag=nife_tg_point] run setblock ~ ~ ~ air
+execute if score game1 nife_stats matches 0 at @e[tag=nife_tg_point] run data merge block ~ ~ ~ {LootTable:"chest/empty"}
 #towngame游戏检测任务
 execute if score game1 nife_stats matches 1 run function towngame:game/main
 execute if score game1 nife_stats matches 0 run function towngame:lobby/main

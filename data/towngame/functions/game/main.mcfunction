@@ -10,6 +10,7 @@ execute if entity @r[scores={nife_deaths=1..},tag=nife_game_1] run function town
 execute at @a[tag=nife_game_1] run gamemode spectator @a[distance=0..,tag=!nife_game_1]
 #去除插在地上的箭
 kill @e[type=arrow,nbt={inGround:1b}]
+execute as @e[type=minecraft:trident,nbt={inGround:1b}] run data merge entity @s {Glowing:1b,Fire:2s}
 #其他任务
 clear @a[tag=nife_game_1] minecraft:chest
 clear @a[tag=nife_game_1] minecraft:glass_bottle
@@ -20,8 +21,8 @@ function nifeather_updater:ingame_loop
 #bossbar1务
 execute at @a[tag=nife_game_1,limit=1] store result bossbar nife:game_1 value run worldborder get
 execute at @a[tag=nife_game_1,limit=1] store result score border_size nife_stats run worldborder get
-execute if score nife_tg_border nife_stats matches 0.. run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
-execute if score nife_tg_border nife_stats matches -1 run bossbar set nife:game_1 name {"color":"white","bold":true,"translate":"tg.main.bbtext.dm","with":[{"color":"red","translate":"tg.stage_deathmatch.title"},{"translate":"tg.panel.head"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"gold","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score nife_tg_border nife_stats matches 0.. run bossbar set nife:game_1 name {"color":"gold","bold":true,"translate":"tg.main.bbtext","with":[{"color":"white","score":{"objective":"nife_time","name":"towngame_bossbar_num"}},{"translate":"tg.time.sec"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"white","score":{"name":"nife_tg_border","objective":"nife_stats"}},{"color":"green","score":{"objective":"nife_stats","name":"player_count"}}]}
+execute if score nife_tg_border nife_stats matches -1 run bossbar set nife:game_1 name {"color":"gold","bold":true,"translate":"tg.main.bbtext.dm","with":[{"color":"red","translate":"tg.stage_deathmatch.title"},{"translate":"tg.panel.head"},{"color":"white","score":{"objective":"nife_stats","name":"border_size"}},{"color":"gold","score":{"objective":"nife_stats","name":"player_count"}}]}
 execute if score border_size nife_stats matches 1250.. run bossbar set nife:game_1 color green
 execute if score border_size nife_stats matches 500..1241 run bossbar set nife:game_1 color white
 execute if score border_size nife_stats matches 250..499 run bossbar set nife:game_1 color yellow

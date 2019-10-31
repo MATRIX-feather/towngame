@@ -5,6 +5,30 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name":"minecraft:leather_chestplate",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage":{
+                "max": 0.5,
+                "min": 0
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttributeModifiers:[{Operation:0,Amount:20,UUIDLeast:1L,UUIDMost:1L,Slot:chest,AttributeName:\"generic.attackSpeed\",Name:\"CBC\"},{Operation:0,Amount:-10,UUIDLeast:1L,UUIDMost:1L,Slot:chest,AttributeName:\"generic.armor\",Name:\"CBC\"},{Operation:0,Amount:-10,UUIDLeast:1L,UUIDMost:1L,Slot:chest,AttributeName:\"generic.armorToughness\",Name:\"CBC\"}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate": "tg.def.up4.lore"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 10,
           "functions":[
@@ -147,9 +171,13 @@
         },
         {
           "type": "item",
-          "name": "minecraft:diamond_helmet",
+          "name": "minecraft:carved_pumpkin",
           "weight": 20,
           "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttributeModifiers:[{Operation:0,Amount:3,UUIDLeast:1L,UUIDMost:1L,Slot:head,AttributeName:\"generic.armor\",Name:\"CBC\"},{Operation:0,Amount:2,UUIDLeast:1L,UUIDMost:1L,Slot:head,AttributeName:\"generic.armorToughness\",Name:\"CBC\"}]}"
+            },
             {
               "function": "enchant_randomly"
             },

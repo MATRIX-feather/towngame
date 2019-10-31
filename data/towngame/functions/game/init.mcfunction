@@ -24,7 +24,7 @@ execute at @e[tag=game1_spread] run time set noon
 execute at @e[tag=game1_spread] run difficulty hard
 execute at @e[tag=game1_spread] run gamerule mobGriefing false
 execute at @e[tag=game1_spread] run gamerule doMobSpawning false
-execute at @e[tag=game1_spread] run gamerule spectatorsGenerateChunks false
+execute at @e[tag=game1_spread] run gamerule spectatorsGenerateChunks true
 #初始化玩家设置
 clear @a[tag=nife_game_1]
 effect clear @a[tag=nife_game_1]
@@ -35,8 +35,8 @@ effect give @a[tag=nife_game_1] minecraft:blindness 3 1 true
 effect give @a[tag=nife_game_1] minecraft:resistance 40 255
 execute at @e[tag=game1_spread] run spreadplayers ~ ~ 450 451 false @a[tag=nife_game_1]
 execute at @a[tag=nife_game_1] run tp @p ~ 255 ~
-xp set @a[tag=nife_game_1] 60 levels
-execute if score nife_tg_insanemode nife_tg_settings matches 1 run xp set @a[tag=nife_game_1] 32767 levels
+xp set @a[tag=nife_game_1] 32767 levels
+playsound minecraft:entity.iron_golem.death master @a[tag=nife_game_1] ~ ~ ~ 10000 0
 #初始化计分板
 #tick_Current : 游戏刻计时
 #nife_tg_title : 游戏标题相关

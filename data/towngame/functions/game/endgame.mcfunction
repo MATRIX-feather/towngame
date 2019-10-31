@@ -22,6 +22,7 @@ execute at @e[tag=game1_atk] run data merge block ~ ~ ~ {LootTable:"chest/empty"
 execute at @e[tag=game1_def] run data merge block ~ ~ ~ {LootTable:"chest/empty"}
 execute at @e[tag=game1_spread] run time set day
 kill @e[tag=towngame_entity]
+execute at @e[tag=game1_spread] run kill @e[type=minecraft:trident,distance=0..]
 execute at @e[tag=nife_tg_lobby] run kill @e[type=arrow,distance=0..]
 execute at @e[tag=nife_tg_lobby] run kill @e[type=item,distance=0..]
 #排名公告
