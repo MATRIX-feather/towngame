@@ -4,7 +4,7 @@
         "layer0": "item/carrot_on_a_stick"
     },
     "overrides": [
-        { "predicate": { "custom_model_data": 1 }, "model": "item/spectral_arrow" },
+        { "predicate": { "custom_model_data": 1 }, "model": "item/ender_eye" },
         { "predicate": { "custom_model_data": 2 }, "model": "item/template_spawn_egg" },
         { "predicate": { "custom_model_data": 3 }, "model": "block/anvil"},
         { "predicate": { "custom_model_data": 4 }, "model": "block/tnt" },

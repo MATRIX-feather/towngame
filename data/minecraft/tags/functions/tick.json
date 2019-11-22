@@ -1,5 +1,6 @@
 {
     "values":[
-        "towngame:tick"
+        "towngame:threads/main/tick",
+        "towngame:threads/ui/tick"
     ]
 }

@@ -1,4 +1,4 @@
-#创建计分板并重置数据
+#region 创建计分板并重置数据
 scoreboard objectives add nife_stats dummy {"text":"nife_stats | 状态/统计数据"}
 scoreboard objectives add nife_deaths deathCount {"text":"nife_deaths"}
 scoreboard objectives add nife_time dummy {"text":"nife_time | 计时相关"}
@@ -11,8 +11,14 @@ scoreboard objectives add nife_P-health health {"text":"nife_P-health | 玩家�
 scoreboard objectives add nife_lazer_timer dummy {"text":"nife_lazer_timer | 镭射道具计时器"}
 scoreboard objectives add nife_tg_border dummy {"text":"nife_tg_border | 游戏边界相关"}
 scoreboard objectives add nife_var_use minecraft.used:minecraft.carrot_on_a_stick {"text":"nife_var_use | 道具使用,萝卜钓竿"}
+scoreboard objectives add nife_lazer_retry dummy {"text":"nife_lazer_retry | 镭射枪重试次数"}
+scoreboard objectives add nife_SINGAL dummy {"text":"nife_SINGAL | 信号"}
+#endregion
+#region 设置数据
 scoreboard players set nife_tglobby_countdown nife_stats 0
 scoreboard players set 1s nife_stats 20
+scoreboard players set zero nife_stats 0
+#endregion
 #初始化bossbar
 bossbar add nife:tg_lobby_countdownbar {"text":""}
 bossbar set nife:tg_lobby_countdownbar max 30

@@ -1,20 +1,83 @@
 {
+  "null":{
+    "sounds":[],
+    "subtitle": "tg.sound.null"
+  },
   "var.lazer.shoot": {
     "sounds": [
-      "random/explode1",
-      "random/explode2",
-      "random/explode3",
-      "random/explode4"
+      {
+        "name": "entity.generic.explode",
+        "type": "event"
+      }
     ],
-    "subtitle": "tg.var.lazer.shoot"
+    "subtitle": "tg.sound.gadgets.lazer.shoot"
   },
   "var.lazer.damage":{
     "sounds": [
-      "random/explode1",
-      "random/explode2",
-      "random/explode3",
-      "random/explode4"
+      {
+        "name": "entity.generic.explode",
+        "type": "event"
+      }
     ],
-    "subtitle": "tg.var.lazer.damage"
+    "subtitle": "tg.sound.gadgets.lazer.damage"
+  },
+  "gadgets.glow.use":{
+    "sounds": [
+      {
+        "name": "block.enchantment_table.use",
+        "pitch": 1,
+        "type": "event"
+      }
+    ],
+    "subtitle": "tg.sound.gadgets.glow.use"
+  },
+  "gadgets.summon_horse.use":{
+    "sounds": [
+      {
+        "name": "towngame:null",
+        "pitch": 1,
+        "type": "event"
+      }
+    ],
+    "subtitle": "tg.sound.gadgets.summon_horse.use"
+  },
+  "gadgets.player_swap.use":{
+    "sounds":[
+      {
+        "name": "minecraft:block.anvil.land",
+        "pitch": 1,
+        "type": "event"
+      }
+    ],
+    "subtitle": "tg.sound.gadgets.player_swap.use"
+  },
+  "generic.borderchange.generic":{
+    "sounds":[
+      {
+        "name": "entity.wither.ambient",
+        "type": "event"
+      }
+    ],
+    "subtitle":"tg.sound.generic.borderchange.generic"
+  },
+  "generic.gamestart.generic":{
+    "sounds":[
+      {
+        "name": "minecraft:entity.iron_golem.death",
+        "pitch": 0.5,
+        "type": "event"
+      }
+    ],
+    "subtitle":"tg.sound.generic.gamestart.generic"
+  },
+  "generic.gameover.generic":{
+    "sounds":[
+      {
+        "name":"minecraft:entity.wither.death",
+        "pitch": 1.5,
+        "type": "event"
+      }
+    ],
+    "subtitle":"tg.sound.generic.gameover.generic"
   }
 }

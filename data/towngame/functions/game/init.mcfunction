@@ -24,7 +24,7 @@ execute at @e[tag=game1_spread] run time set noon
 execute at @e[tag=game1_spread] run difficulty hard
 execute at @e[tag=game1_spread] run gamerule mobGriefing false
 execute at @e[tag=game1_spread] run gamerule doMobSpawning false
-execute at @e[tag=game1_spread] run gamerule spectatorsGenerateChunks false
+execute at @e[tag=game1_spread] run gamerule spectatorsGenerateChunks true
 #初始化玩家设置
 clear @a[tag=nife_game_1]
 effect clear @a[tag=nife_game_1]
@@ -35,9 +35,9 @@ effect give @a[tag=nife_game_1] minecraft:blindness 3 1 true
 effect give @a[tag=nife_game_1] minecraft:resistance 40 255
 execute at @e[tag=game1_spread] run spreadplayers ~ ~ 450 451 false @a[tag=nife_game_1]
 execute at @a[tag=nife_game_1] run tp @p ~ 255 ~
-xp set @a[tag=nife_game_1] 60 levels
-execute if score nife_tg_insanemode nife_tg_settings matches 1 run xp set @a[tag=nife_game_1] 32767 levels
-#初始化计分板
+xp set @a[tag=nife_game_1] 32767 levels
+playsound towngame:generic.gamestart.generic master @a[tag=nife_game_1] ~ ~ ~ 10000 0
+#>初始化计分板
 #tick_Current : 游戏刻计时
 #nife_tg_title : 游戏标题相关
 #nife_tg_bordertime 一次缩圈的时间,用于bossbar的UI
@@ -56,18 +56,15 @@ scoreboard players set towngame_1s nife_time 20
 scoreboard players set nife_tg_border nife_stats 0
 scoreboard players set resize_times nife_stats 0
 function towngame:lobby/event/reset_count
-#初始化bossbar&标题栏
+#region 初始化bossbar&标题栏
 bossbar add nife:game_1 {"text":""}
 bossbar set nife:game_1 max 1500
 bossbar set nife:game_1 color white
 bossbar set nife:game_1 style progress
 bossbar set nife:game_1 players @a[tag=nife_game_1]
-bossbar set nife:tg_lobby_countdownbar players
+bossbar set nife:tg_lobby_countdownbar players none
 execute as @e[tag=game1_spread] store result score nife_tg_bcenterZ nife_pos_Z run data get entity @s Pos[2]
 execute as @e[tag=game1_spread] store result score nife_tg_bcenterX nife_pos_X run data get entity @s Pos[0]
-function towngame:game/ui/startmsg
-#计算玩家数量
-#scoreboard players set player_count nife_stats 0
-#execute at @a[tag=nife_game_1] run scoreboard players add player_count nife_stats 1
+#endregion
 #函数插件调起
 function #towngame:plugin.init

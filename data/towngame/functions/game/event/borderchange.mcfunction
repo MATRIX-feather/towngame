@@ -1,4 +1,4 @@
-#缩圈事件,由main调起,非循环
+#region 缩圈事件,由main调起,非循环
 scoreboard players add nife_tg_border nife_stats 1
 execute if score resize_times nife_stats >= dm_time nife_tg_settings run function towngame:game/stage_deathmatch
 execute if score nife_tg_border nife_stats matches 1..1 run function towngame:game/stage1
@@ -11,7 +11,8 @@ execute if score nife_tg_border nife_stats matches 7..7 run function towngame:ga
 execute if score nife_tg_border nife_stats matches 7..7 run scoreboard players set nife_tg_bordertime nife_stats 2
 execute if score nife_tg_border nife_stats matches 8..8 run function towngame:game/stage_resize
 scoreboard players operation changetimes nife_tg_border = commonborder nife_tg_settings
-function towngame:game/loop/border_remove
+execute at @a[tag=nife_game_1] as @a[tag=nife_game_1] run playsound towngame:generic.borderchange.generic ambient @s
+#endregion
 #箱子填充事件
 execute if score nife_tg_border nife_stats matches 1..7 run function towngame:game/event/chestrefill
 #重设边界

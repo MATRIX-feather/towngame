@@ -66,7 +66,7 @@
                 {"text":"\u00a7r"},
                 {"translate": "tg.up","color":"green","bold":true},
                 {"text":"     "},
-                {"translate": "tg.def.up1.name","color":"white","bold": false}
+                {"translate": "tg.def.up.medicine.name","color":"white","bold": false}
               ]
             }
           ],

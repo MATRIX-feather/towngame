@@ -98,7 +98,7 @@
                 {"text":"\u00a7r"},
                 {"translate": "tg.down","color":"red","bold":true},
                 {"text":"     "},
-                {"translate": "tg.atk.down1.name","color":"white","bold": false}
+                {"translate": "tg.atk.down.grenade.name","color":"white","bold": false}
               ]
             }
           ],

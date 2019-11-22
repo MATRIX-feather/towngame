@@ -1,0 +1,1 @@
+execute if score game1 nife_stats matches 1 run function towngame:game/threads/ui/main

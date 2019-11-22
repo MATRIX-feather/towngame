@@ -5,6 +5,33 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name":"minecraft:trident",
+          "weight": 30,
+          "functions": [
+            {
+              "function":"minecraft:set_nbt",
+              "tag":"{tg_tags:['trident']}"
+            },
+            {
+              "function": "minecraft:enchant_randomly"
+            },
+            {
+              "function": "minecraft:enchant_with_levels",
+              "levels": {
+                "min": 90,
+                "max": 90
+              }
+            },
+            {
+              "function": "minecraft:set_damage",
+              "damage": {
+                "max": 0.10,
+                "min": 0
+              }
+            }]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:bow",
           "weight": 30,
           "functions": [
@@ -91,7 +118,7 @@
                 {"text":"\u00a7r"},
                 {"translate": "tg.down","color":"red","bold":true},
                 {"text":"     "},
-                {"translate": "tg.atk.down1.name","color":"white","bold": false}
+                {"translate": "tg.atk.down.grenade.name","color":"white","bold": false}
               ]
             },
             {

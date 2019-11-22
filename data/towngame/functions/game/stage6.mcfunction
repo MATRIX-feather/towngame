@@ -2,7 +2,7 @@
 #使玩家无敌15s
 effect give @a[tag=nife_game_1] minecraft:resistance 25 255
 #显示标题
-title @a[tag=nife_game_1] title [{"text":"⚠","color":"red","bold":true},{"translate":"tg.warn"},{"text":"⚠","color":"red","bold":true}]
+title @a[tag=nife_game_1] title ""
 title @a[tag=nife_game_1] subtitle [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stagechange.subt"},{"text":"⚠","color":"red","bold":true}]
 #毒圈中心改变
 #生成盔甲架
@@ -23,8 +23,7 @@ execute as @e[tag=nife_func_1] store result score nife_tg_bcenterX nife_pos_X ru
 #清除盔甲架
 kill @e[type=minecraft:armor_stand,tag=nife_func_1]
 #标题
-tellraw @a[tag=nife_game_1] [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stage6.borderchange"},{"text":"⚠","color":"red","bold":true}]
+tellraw @a[tag=nife_game_1] ""
 title @a[tag=nife_game_1] actionbar [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stage6.borderchange"},{"text":"⚠","color":"red","bold":true}]
 #音效及空投
-execute at @a[tag=nife_game_1] run playsound minecraft:entity.ender_dragon.growl ambient @a[tag=nife_game_1] ~ ~ ~ 10 1
 kill @e[type=item]

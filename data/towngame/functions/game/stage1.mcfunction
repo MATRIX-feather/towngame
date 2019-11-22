@@ -8,5 +8,4 @@ execute at @e[tag=game1_spread] run worldborder damage amount 0.1
 title @a[tag=nife_game_1] title [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stage1.title"},{"text":"⚠","color":"red","bold":true}]
 title @a[tag=nife_game_1] subtitle [{"text":"⚠","color":"red","bold":true},{"translate":"tg.stage1.subt"},{"text":"⚠","color":"red","bold":true}]
 #音效及空投
-execute at @a[tag=nife_game_1] run playsound minecraft:entity.ender_dragon.growl ambient @a[tag=nife_game_1] ~ ~ ~ 10 1
 execute at @a[tag=nife_game_1,gamemode=adventure] run function towngame:game/event/supply

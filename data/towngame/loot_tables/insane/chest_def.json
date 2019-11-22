@@ -5,6 +5,30 @@
       "entries": [
         {
           "type": "minecraft:item",
+          "name":"minecraft:leather_chestplate",
+          "weight": 10,
+          "functions": [
+            {
+              "function": "minecraft:set_damage",
+              "damage":{
+                "max": 0.5,
+                "min": 0
+              }
+            },
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{AttributeModifiers:[{Operation:0,Amount:20,UUIDLeast:1L,UUIDMost:1L,Slot:chest,AttributeName:\"generic.attackSpeed\",Name:\"CBC\"},{Operation:0,Amount:-10,UUIDLeast:1L,UUIDMost:1L,Slot:chest,AttributeName:\"generic.armor\",Name:\"CBC\"},{Operation:0,Amount:-10,UUIDLeast:1L,UUIDMost:1L,Slot:chest,AttributeName:\"generic.armorToughness\",Name:\"CBC\"}]}"
+            },
+            {
+              "function": "minecraft:set_lore",
+              "lore": [
+                {"translate": "tg.def.up.high-speed-chestplate.lore"}
+              ]
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
           "name": "minecraft:book",
           "weight": 10,
           "functions":[
@@ -139,19 +163,19 @@
                 {"text":"\u00a7r"},
                 {"translate": "tg.up","color":"green","bold":true},
                 {"text":"     "},
-                {"translate": "tg.def.up1.name","color":"white","bold": false}
+                {"translate": "tg.def.up.medicine.name","color":"white","bold": false}
               ]
             }
           ],
           "weight": 5
         },
         {
-          "type": "item",
+          "type": "minecraft:item",
           "name": "minecraft:diamond_helmet",
           "weight": 20,
           "functions": [
             {
-              "function": "enchant_randomly"
+              "function": "minecraft:enchant_randomly"
             },
             {
               "function": "minecraft:enchant_with_levels",
@@ -161,7 +185,7 @@
               }
             },
             {
-              "function": "set_damage",
+              "function": "minecraft:set_damage",
               "damage": 0
             }
           ]
@@ -198,7 +222,7 @@
                 {"text":"\u00a7r"},
                 {"translate": "tg.up","color":"green","bold":true},
                 {"text":"     "},
-                {"translate": "tg.def.up2.name","color":"white","bold": false}
+                {"translate": "tg.def.up.escape.name","color":"white","bold": false}
               ]
             }
           ],
@@ -233,7 +257,7 @@
                 {"text":"\u00a7r"},
                 {"translate": "tg.up","color":"green","bold":true},
                 {"text":"     "},
-                {"translate": "tg.def.up3.name","color":"white","bold": false}
+                {"translate": "tg.def.up.buffpack.name","color":"white","bold": false}
               ]
             }
           ],

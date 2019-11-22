@@ -11,8 +11,9 @@ effect give @a[tag=tg_sw] minecraft:blindness 1 0 true
 effect give @a[tag=tg_sw] minecraft:resistance 3 255 true
 effect give @a[tag=tg_sw] minecraft:weakness 3 255 true
 effect give @a[tag=tg_sw] minecraft:levitation 1 10 true
-tellraw @s [{"translate":"tg.panel.head","color":"gray","bold":true},{"translate":"tg.gadgets.player_swap.msg.user","with":[{"selector":"@a[tag=tg_sw_1]"},{"selector":"@a[tag=tg_sw_2"}]}]
+tellraw @s [{"translate":"tg.panel.head","color":"gray","bold":true},{"translate":"tg.gadgets.player_swap.msg.user","with":[{"selector":"@a[tag=tg_sw_1]"},{"selector":"@a[tag=tg_sw_2]"}]}]
 tellraw @a[tag=tg_sw] [{"translate":"tg.panel.head","color":"gray","bold":true},{"translate":"tg.gadgets.player_swap.msg.target"}]
+playsound towngame:gadgets.player_swap.use master @a[tag=tg_sw]
 tag @a[tag=tg_sw] remove tg_sw_1
 tag @a[tag=tg_sw] remove tg_sw_2
 tag @a[tag=tg_sw] remove tg_sw
